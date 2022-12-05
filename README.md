@@ -1,4 +1,4 @@
-[![REUSE status]()]()
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-docs/btp-service-manager)](https://api.reuse.software/info/github.com/SAP-docs/btp-service-manager)
 
 # Contributions to Service Manager Documentation 
 
