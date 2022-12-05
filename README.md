@@ -2,7 +2,7 @@
 
 # Contributions to Service Manager Documentation 
 
-Found a mistake in our documentation? Always wanted to add a step in one of our procedures that could save many others much time? Then you're at the right place! All contributions made to the Markdown files in the [docs](docs) directory are reviewed, and if deemed valuable be added to our [official documentation on SAP Help Portal](https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/3a27b85a47fc4dff99184dd5bf181e14.html?version=Cloud). The easiest way is to start there, and choose _Edit_ to find the right Markdown file to contribute to.
+Found a mistake in our documentation? Always wanted to add a step in one of our procedures that could save many others much time? Then you're at the right place! All contributions made to the Markdown files in the [docs](docs) directory are reviewed, and if deemed valuable be added to our [official documentation on SAP Help Portal](https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/3a27b85a47fc4dff99184dd5bf181e14.html?version=Cloud). The easiest way is to start there, and choose _Edit_ to find the right Markdown file to contribute to. 
 
 ## Requirements
 
