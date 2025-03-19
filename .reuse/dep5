@@ -1,8 +1,0 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: btp-service-manager
-Upstream-Contact: Daniel Korac (danielforsap@gmail.com)
-Source: https://github.com/sap-docs/btp-service-manager
-
-Files: *
-Copyright:  2022 SAP SE or an SAP affiliate company and btp-service-manager contributors
-License: CC-BY-4.0

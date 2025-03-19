@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "btp-service-manager"
+SPDX-PackageSupplier = "Daniel Korac (danielforsap@gmail.com)"
+SPDX-PackageDownloadLocation = "https://github.com/sap-docs/btp-service-manager"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 SAP SE or an SAP affiliate company and btp-service-manager contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
