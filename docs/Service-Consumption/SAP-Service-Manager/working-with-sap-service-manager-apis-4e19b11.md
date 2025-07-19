@@ -19,7 +19,7 @@ The SAP Service Manager APIs are divided into three groups:
 
 ## API Specifications in SAP API Business Hub and Swagger
 
-Visit [SAP API Business Hub](https://api.sap.com/api/APIServiceManagment/resource) for the list of all SAP Service Manager APIs, their specifications, and links to accompanying documentation.
+Visit [SAP API Business Hub](https://api.sap.com/api/APIServiceManager/resource/) for the list of all SAP Service Manager APIs, their specifications, and links to accompanying documentation.
 
 If you also want to try out the APIs, go to SAP-customized Swagger at <code>https://service-manager.<i class="varname">&lt;app domain&gt;</i>.<i class="varname">&lt;landscape domain&gt;</i>/swaggerui/swagger-ui.html</code>
 
