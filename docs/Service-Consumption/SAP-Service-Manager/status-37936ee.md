@@ -20,7 +20,7 @@ Get the status of an asynchronous operation.
 
 ## Usage
 
-`smctl status [operation URL path] [flags]`
+`smctl status operation URL path [flags]`
 
 
 

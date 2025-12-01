@@ -6,6 +6,10 @@ Use the SAP BTP cockpit to view and manage all the services your subaccount is e
 
 
 
+-   **[Accessibility Features in SAP Service Manager](accessibility-features-in-sap-service-manager-223a4ff.md "Optimize your experience when using SAP Service
+                                Manager in SAP BTP cockpit with features and settings that make the software work more
+		efficiently.")**  
+Optimize your experience when using SAP Service Manager in SAP BTP cockpit with features and settings that make the software work more efficiently.
 -   **[View and Manage Services from the Service Marketplace](view-and-manage-services-from-the-service-marketplace-affcc24.md "View all offerings you’re entitled to consume in your subaccount and create an instance
 		of a service or an environment and a subscription to an application.")**  
 View all offerings you’re entitled to consume in your subaccount and create an instance of a service or an environment and a subscription to an application.

@@ -12,7 +12,7 @@
 
 ***smctl version*** 
 
-Displays information about the subaccount to which the **SMCTL** is connected.
+Displays information about the smctl version in use.
 
 
 

@@ -12,7 +12,7 @@
 
 ***smctl delete-platform*** 
 
-Deletes a set of platforms registered in the SAP Service Manager instance.
+Deletes one or more platforms registered in the SAP Service Manager instance.
 
 
 
@@ -20,7 +20,7 @@ Deletes a set of platforms registered in the SAP Service Manager instance.
 
 ## Usage
 
-`smctl delete-platform <name1> <name2> <name3> ... <nameN> [flags]`
+`smctl delete-platform [name] <name2 <name3> ... <nameN>> [flags]`
 
 
 
@@ -87,7 +87,7 @@ No
 </td>
 <td valign="top">
 
-Cascade delete for `delete-platform` command.
+Deletes all the platforms associated with the subaccount in a single command execution.
 
 
 

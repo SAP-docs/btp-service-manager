@@ -6,7 +6,12 @@
 
 ## Procedure
 
-1.  In order to use the Service Catalog and see the marketplace, install the Service Catalog CLI by executing the following commands:
+1.  > ### Caution:  
+    > This consuming option is out-of-date. We strongly recommend that you [consume SAP BTP services in Kubernetes with SAP BTP service operator](https://help.sap.com/docs/service-manager/sap-service-manager/consuming-sap-btp-services-in-kubernetes-with-sap-btp-service-operator?version=Cloud).
+    > 
+    > If you're already using SAP Service Manager Broker Proxy \(Service Catalog\), then first get familiar with how to [migrate from svcat to SAP BTP service operator](https://help.sap.com/docs/service-manager/sap-service-manager/migrating-from-svcat-to-sap-btp-service-operator?version=Cloud).
+
+    To use the Service Catalog and get an access to the marketplace, install the Service Catalog CLI by executing the following commands:
 
     -   For Mac OS:
 
@@ -49,7 +54,7 @@
         ```
 
 
-    See [Install the Service Catalog CLI](https://svc-cat.io/docs/install/#installing-the-service-catalog-cli).
+    See [Install the Service Catalog CLI](https://github.com/kubernetes-retired/service-catalog/blob/master/docs/install.md).
 
 2.  Use the Service Catalog CLI to present the list of all the SAP BTP services available for the Kubernetes environment:
 

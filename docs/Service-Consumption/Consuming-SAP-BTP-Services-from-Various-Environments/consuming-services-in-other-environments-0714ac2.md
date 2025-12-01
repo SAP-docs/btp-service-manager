@@ -123,8 +123,6 @@ You have an SAP Business Technology Platform subaccount.
                             | jq -r ".items[0].id")
     ```
 
-    For more information about the API, see [Service Offerings](../SAP-Service-Manager/service-offerings-e43b399.md)
-
 2.  Use the `Get All Service Plans` API to retrieve the ID of the `application` service plan:
 
     ```
@@ -133,8 +131,6 @@ You have an SAP Business Technology Platform subaccount.
                             -G --data-urlencode "fieldQuery=name eq 'application' and service_offering_id eq '$xsuaa_service_id'" \
                             | jq -r ".items[0].id")
     ```
-
-    For more information about the API, see [Service Plans](../SAP-Service-Manager/service-plans-2c37d0c.md).
 
 3.  Create the service instance of the `xsuaa` service using the `Create a Service Instance` API:
 
@@ -147,8 +143,6 @@ You have an SAP Business Technology Platform subaccount.
 
     The name of the new instance is `example-xsuaa-instance`, and the `async=false` setting indicates that the command output becomes available only once the instance is ready to be used.
 
-    For more information about the API, see [Service Instances](../SAP-Service-Manager/service-instances-9981887.md).
-
 4.  Create a binding to access the service instance you created in the previous step by calling the `Create a Service Binding` API:
 
     ```
@@ -159,7 +153,8 @@ You have an SAP Business Technology Platform subaccount.
 
     The name of the new binding is `example-xsuaa-binding`. and the output includes the `credentials` section that contains the access URLs and authorization details required to use the `xsuaa` service.
 
-    For more information about the API, see [Service Bindings](../SAP-Service-Manager/service-bindings-392eb36.md).
+    > ### Tip:  
+    > Visit [SAP Business Accelerator Hub](https://api.sap.com/api/APIServiceManagment/resource) to view more details about the mentioned SAP Service Manager APIs.
 
 5.  Inject service access details to your application:
 
@@ -190,5 +185,5 @@ You can now consume the `xsuaa` service in the environment of your choice.
 
 [Consuming SAP BTP Services from the Kyma Environment](consuming-sap-btp-services-from-the-kyma-20a8360.md "SAP BTP Kyma environment is a fully managed Kubernetes-based environment that allows you to consume external services and use their functionality to build and deploy your own applications.")
 
-[Consuming SAP BTP Services from Kubernetes](consuming-sap-btp-services-from-kubernet-ba4fd1f.md "Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications. In the following sections, you'll learn how to consume SAP BTP services from Kubernetes.")
+[Consuming SAP BTP Services from Kubernetes](consuming-sap-btp-services-from-kubernet-ba4fd1f.md "Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications.")
 

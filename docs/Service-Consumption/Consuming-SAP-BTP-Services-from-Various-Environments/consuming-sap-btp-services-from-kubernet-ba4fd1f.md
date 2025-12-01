@@ -2,7 +2,16 @@
 
 # Consuming SAP BTP Services from Kubernetes
 
-Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications. In the following sections, you'll learn how to consume SAP BTP services from Kubernetes.
+Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications.
+
+There are two ways to consume Kubernetes services with Service Manager:
+
+-   [Consuming SAP BTP Services in Kubernetes with SAP Service Manager Broker Proxy \(Service Catalog\)](consuming-sap-btp-services-in-kubernetes-20195bf.md)
+
+-   [Consuming SAP BTP Services in Kubernetes with SAP BTP Service Operator](consuming-sap-btp-services-in-kubernetes-b5a35bf.md)
+
+> ### Note:  
+> The first option is no longer supported. While you can still use it, we strongly recommend that you use the second option or switch to it if you are currently using the Service Manager Broker Proxy. See [Migrating from svcat to SAP BTP Service Operator](migrating-from-svcat-to-sap-btp-service-ec7f5c7.md)
 
 -   **[Prerequisites](prerequisites-dd5faaa.md)**  
 

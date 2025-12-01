@@ -12,6 +12,9 @@ The SAP Service Manager API can be accessed using OAuth 2.0 access tokens issued
 
 -   Obtain the credentials for SAP BTP cockpit to access services from SAP Business Technology Platform in your subaccount. See [Subscribing to SAP Service Manager \[Feature Set A\]](subscribing-to-sap-service-manager-feature-set-a-274d049.md).
 
+    > ### Note:  
+    > If you are using cloud management tools feature set B, you don't to obtain the credentials to subscribe to SAP Service Manager because the required role collections are automatically available to you without the whole subscription process.
+
 -   Assign the SAP Service Manager roles to the user. See [Assign the Subaccount Service Administrator Collection](assign-the-subaccount-service-administrator-collection-0735965.md).
 
     For more information about the scopes included in each role, see [SAP Service Manager Roles](sap-service-manager-roles-d95fbe7.md).
@@ -21,10 +24,27 @@ The SAP Service Manager API can be accessed using OAuth 2.0 access tokens issued
 
 ## Procedure
 
-1.  Get an access token:
+1.  Get an access token by running the following command:
+
+    Linux:
 
     ```
-    curl 'https://service-manager.cfapps.<region domain>/v1/oauth/<subdomain>/token' -i -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: application/json' --data 'grant_type=password&username=<username>&password=< password>'
+    curl 'https://service-manager.cfapps.<region domain>/v1/oauth/<subdomain>/token' \
+     -i -X POST \
+     -H 'Content-Type: application/x-www-form-urlencoded' \
+     -H 'Accept: application/json' \
+     --data 'grant_type=password&username=<username>&password=<password>'
+    ```
+
+    Windows::
+
+    ```
+    curl ^
+    -i -X POST ^
+     -H "Content-Type: application/x-www-form-urlencoded" ^
+     -H "Accept: application/json" ^
+     -H "Authorization: Basic Y2Y6" ^
+     --data "grant_type=password&username=<username>&password=<password>" https://service-manager.cfapps.sap.hana.ondemand.com/v1/oauth/<subdomain>/token
     ```
 
     > ### Note:  

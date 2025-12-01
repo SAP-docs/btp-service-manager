@@ -8,7 +8,7 @@ Use various combinations of filtering parameters to optimize the results of the 
 
 The resources to which these parameters apply are: platforms, service brokers, service instances, service bindings, service plans, and service offerings.
 
-Check the SAP Service Manager API section of [SAP API Business Hub](https://api.sap.com/api/APIServiceManagment/resource) for more details about the Get all APIs for each of the resources.
+Check the SAP Service Manager API section of [SAP Business Accelerator Hub](https://api.sap.com/api/APIServiceManagment/resource) for more details about the Get all APIs for each of the resources.
 
 
 

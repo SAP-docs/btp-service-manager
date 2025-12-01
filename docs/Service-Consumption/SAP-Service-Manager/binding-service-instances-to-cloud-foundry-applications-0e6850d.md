@@ -2,7 +2,7 @@
 
 # Binding Service Instances to Cloud Foundry Applications
 
-Bind a service instance to your Cloud Foundry app to enable the automatic delivering of credentials needed to access the service instance to the application.
+Bind a service instance to your Cloud Foundry app to enable the automatic delivery of credentials needed to access the service instance from the application.
 
 
 
@@ -23,7 +23,7 @@ Bind a service instance to your Cloud Foundry app to enable the automatic delive
 
     All existing service instances grouped by environments appear.
 
-2.  In the Cloud Foundry instances section, select the instance to which you wish to bind the application.
+2.  In the Cloud Foundry instances section, select the instance to which you want to bind the application.
 
 3.  In the service instance details section that opens to the right, select the Actions menu \(![](images/Actions_icon_e7540c0.png)\) and then select *Bind Application*.
 

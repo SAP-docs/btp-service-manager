@@ -10,7 +10,7 @@ Use the SAP BTP service operator to consume SAP BTP services from your Kubernete
 
 ## Context
 
-To consume an SAP SAP BTP service, you create an instance of that service, and then you create a binding so that your Kubernetes-native applications can get access credentials to the instance you created.
+To consume an SAP BTP service, you create an instance of that service, and then you create a binding so that your Kubernetes-native applications can get access credentials to the instance you created.
 
 
 
@@ -25,7 +25,7 @@ To consume an SAP SAP BTP service, you create an instance of that service, and t
 1.  Create a `ServiceInstance` custom resource file with the following structure:
 
     ```
-    apiVersion: services.cloud.sap.com/v1alpha1
+    apiVersion: services.cloud.sap.com/v1
         kind: ServiceInstance
         metadata:
             name: my-service-instance
@@ -65,7 +65,7 @@ To consume an SAP SAP BTP service, you create an instance of that service, and t
 1.  Create a `ServiceBinding` custom resource file and set the `serviceInstanceName` field value to the name of the `ServiceInstance` custom resource file you created in the first section:
 
     ```
-    apiVersion: services.cloud.sap.com/v1alpha1
+    apiVersion: services.cloud.sap.com/v1
     kind: ServiceBinding
     metadata:
         name: my-binding

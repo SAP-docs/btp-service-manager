@@ -1,15 +1,15 @@
 <!-- loiob6822e603cee4d1ca71ef899a85c5509 -->
 
-# Retrieve an OAuth2 Access Token
+# Retrieve an OAuth 2.0 Access Token
 
 
 
 1.  Get an access token:
 
-    Use the `uaa_url`, `clientid`, and `clientsecret` you obtained when you created a service instance \([Create a SAP Service Manager Instance and Binding](create-a-sap-service-manager-instance-and-binding-1ca5bbe.md)\) with one of the broker plans \([SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md)\) to request an access token using the following command:
+    Use the `url`, `clientid`, and `clientsecret` you obtained when you created a service instance \([Create a SAP Service Manager Instance and Binding](create-a-sap-service-manager-instance-and-binding-1ca5bbe.md)\) with one of the broker plans \([SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md)\) to request an access token using the following command:
 
     ```
-    curl '<uaa_url>/oauth/token' -X POST \
+    curl '<url>/oauth/token' -X POST \
         -H 'Accept: application/json' \
         -d 'grant_type=client_credentials&client_id=<clientid>&client_secret=<clientsecret>
     ```

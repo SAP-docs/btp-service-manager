@@ -1,6 +1,6 @@
 <!-- loio93532bd72117429bb823a46ef2ddd003 -->
 
-# Installing the Service Manager Control\(SMCTL\) Command-Line Tool
+# Installing the Service Manager Control \(SMCTL\) Command-Line Tool
 
 Install the SMCTL Command-Line tool to start using this interface with the SAP Service Manager service resources.
 

@@ -22,6 +22,8 @@ SAP BTP service operator enables you to provision and consume SAP BTP offerings 
 
 -   You must be an SAPBTP subaccount admin.
 
+-   Perform steps 1 and 2 described in the [Setup](setup-e977f23.md) topic.
+
 
 
 
@@ -35,9 +37,7 @@ The procedure consists of two main groups of steps; first, you set up the servic
 
 ### Setup
 
-1.  Perform steps 1 and 2 described in the [Setup](setup-e977f23.md) topic.
-
-2.  Deploy the SAP BTP service operator by executing the following command:
+1.  Deploy the SAP BTP service operator by executing the following command:
 
     ```
      helm upgrade --install sap-btp-operator https://github.com/SAP/sap-btp-service-operator/releases/download/<release>/sap-btp-operator-<release>.tgz \
@@ -72,7 +72,7 @@ The procedure consists of two main groups of steps; first, you set up the servic
     > .
     > ```
 
-3.  Download and install SAP BTP service operator CLI in one of the following ways:
+2.  Download and install SAP BTP service operator CLI in one of the following ways:
 
     -   Manual Installation:
 

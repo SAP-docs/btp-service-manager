@@ -46,7 +46,7 @@ SAP Service Manager works with the following resources:
 		command-line interface and REST APIs.")**  
 You can use the SAP Service Manager service capabilities from the SAP BTP cockpit to manage service instances and service bindings. Also, technical access is available via a command-line interface and REST APIs.
 
-**Parent topic:** [Consuming Services in SAP BTP](../consuming-services-in-sap-btp-f13b6c6.md "To use services in SAP BTP, you creatе a service instance, using either the SAP BTP cockpit, or the command-line tools of your runtime platform, for example, the Cloud Foundry environment Command Line Interface (cf CLI), and create bindings to retrieve access credentials.")
+**Parent topic:** [Consuming Services in SAP BTP](../consuming-services-in-sap-btp-f13b6c6.md "To use services in SAP BTP, you creatе a service instance, using either the SAP BTP cockpit, or the command-line tool of your runtime platform (for example SAP BTP Command Line Interface) and create bindings to retrieve access credentials.")
 
 **Related Information**  
 

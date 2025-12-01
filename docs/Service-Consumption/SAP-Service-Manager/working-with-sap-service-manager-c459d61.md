@@ -16,15 +16,11 @@ Use the SAP BTP cockpit to view and manage all the services your subaccount is e
 		environment.")**  
 Use the Service Manager Control \(SMCTL\) command-line tool to manage environments, brokers, service instances, and service bindings in SAP Service Manager environment.
 -   **[Working with SAP Service Manager APIs](working-with-sap-service-manager-apis-4e19b11.md "The SAP Service
-                                Manager
-		service API defines a centralized REST interface that allows the management of environments,
-		service brokers, service offerings, service plans, service instances, and service
+                                Manager service API defines a centralized REST interface
+		that allows the management of platforms, service brokers, service offerings, service plans, service instances, and service
 		bindings.")**  
-The SAP Service Manager service API defines a centralized REST interface that allows the management of environments, service brokers, service offerings, service plans, service instances, and service bindings.
--   **[Working with SAP Service Manager Resources by Using the SAP BTP Command Line Interface \(btp CLI\) \[Feature Set B\]](working-with-sap-service-manager-resources-by-using-the-sap-btp-command-l-4dceb6a.md "Use the SAP BTP
-		command line interface to work with the SAP Service
-                                Manager service
-		resources such as service instances, service brokers, service bindings, service plans, and
-		service offerings.")**  
-Use the SAP BTP command line interface to work with the SAP Service Manager service resources such as service instances, service brokers, service bindings, service plans, and service offerings.
+The SAP Service Manager service API defines a centralized REST interface that allows the management of platforms, service brokers, service offerings, service plans, service instances, and service bindings.
+-   **[SAP Service Manager Commands for SAP BTP Command Line Interface \(btp CLI\) \[Feature Set B\]](sap-service-manager-commands-for-sap-btp-command-line-interface-btp-cli-f-4dceb6a.md "Use the SAP BTP command line interface to work with the SAP Service
+                                Manager resources.")**  
+Use the SAP BTP command line interface to work with the SAP Service Manager resources.
 

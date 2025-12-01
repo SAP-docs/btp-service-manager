@@ -2,11 +2,9 @@
 
 # Consuming Services in SAP BTP
 
-To use services in SAP BTP, you creatе a service instance, using either the SAP BTP cockpit, or the command-line tools of your runtime platform, for example, the Cloud Foundry environment Command Line Interface \(cf CLI\), and create bindings to retrieve access credentials.
+To use services in SAP BTP, you creatе a service instance, using either the SAP BTP cockpit, or the command-line tool of your runtime platform \(for example SAP BTP Command Line Interface\) and create bindings to retrieve access credentials.
 
-In a Platform-as-a-Service \(PaaS\) environment, all external dependencies, such as databases, messaging and filing systems, are services.
-
-PaaS environments are also services.
+In a Platform-as-a-Service \(PaaS\) environment, all external dependencies, such as databases, messaging and filing systems, are services. PaaS themselves are also considered services.
 
 In SAP BTP, services are offered in a marketplace, from which users can create service instances on-demand. A service instance is a single instantiation of a service running on SAP BTP.
 

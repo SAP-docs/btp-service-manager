@@ -2,13 +2,7 @@
 
 # Logging in to SAP Service Manager
 
-
-
-<a name="loio22dea57deec44d269655ede9a73de653__context_vbv_2br_zmb"/>
-
-## Context
-
-Describes the procedure to access the SAP Service Manager service using the Service Manager Control \(SMCTL\) CLI.
+Describes the procedure to access the SAP Service Manager using the Service Manager Control \(SMCTL\) Command-Line tool.
 
 
 
@@ -22,7 +16,7 @@ Describes the procedure to access the SAP Service Manager service using the Serv
 
     -   To find the `region domain` for the SAP Service Manager, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/350356d1dc314d3199dca15bd2ab9b0e.html#loiof344a57233d34199b2123b9620d0bb41).
 
-    -   The `subdomain` is the subaccount subdomain, in which you would like to register the broker. You can find it in the cloud cockpit *Overview* tab of your subaccount.
+    -   The `subdomain` is the subaccount subdomain in which the Service Manager is registered. You can find it in the SAP Cloud cockpit *Overview* tab of your subaccount.
 
 
 2.  Input your user, with an assigned *Subaccount Service Administrator* *Role Collection*, and your password.

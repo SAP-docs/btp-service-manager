@@ -1,43 +1,41 @@
 <!-- loio0735965d10b342a393b5a83924dba9b4 -->
 
+<link rel="stylesheet" type="text/css" href="../../css/sap-icons.css"/>
+
 # Assign the Subaccount Service Administrator Collection
 
+Learn how to assign a new Subaccount Service Administrator role collection to a user of your choice.
 
 
-<a name="loio0735965d10b342a393b5a83924dba9b4__context_zvk_sxq_zmb"/>
+
+<a name="loio0735965d10b342a393b5a83924dba9b4__context_fwc_qnk_pwb"/>
 
 ## Context
 
-The procedure shows how to assign new service administrator role collections to a user of your choice.
+You can assign users from default identity providers, and from custom identity providers, to a role collection. After having entered the user's user ID, choose the origin key of the identity provider and the e-mail address.
 
 
+
+<a name="loio0735965d10b342a393b5a83924dba9b4__steps_gwc_qnk_pwb"/>
 
 ## Procedure
 
-1.  In the SAP BTP cockpit, navigate to your subaccount and select *Security* \> *Trust Configuration* \> *SAP ID Service*.
+1.  Open the SAP BTP cockpit.
 
-     ![](images/Trust_Configuration_SAP_ID_Service_2dbe205.png) 
+2.  Go to your global account and subaccount \(see \).
 
-2.  Enter the e-mail of the user you want to assign the role collection to in the *E-Mail Address* field.
+3.  Choose *Security* \> *Role Collections*.
 
-     ![](images/Trust_Configuration_email_input_e62c832.png) 
+4.  Choose the *Subaccount Service Administrator*.
 
-3.  Add the user to the SAP ID service:
+5.  Go to the *Users* section and choose *Edit*.
 
-    1.  Select *Show Assignments*.
+6.  Enter the user ID of the user that you want to assign to the role collection. If the user only exists in a connected identity provider, you must choose the identity provider and type in the e-mail address.
 
-    2.  Select *Add User* in the popup menu.
+7.  \(Optional\) To add more users, choose :heavy_plus_sign: \(Add a user\).
 
+8.  Save your changes.
 
-4.  Assign *Role Collection*:
-
-    1.  Select *Assign Role Collection*.
-
-    2.  In the following popup menu, select *Subaccount Service Administrator* as the *Role Collection*.
-
-    3.  Select *Assign Role Collection*.
-
-
-5.  \(Optional\) Repeat the steps 2. to 4. with additional users who should have the access to the SAP Service Manager APIs.
+    You've now assigned this user to the role collection. The user has all of the authorizations of the role collection.
 
 

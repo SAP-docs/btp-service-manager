@@ -24,12 +24,11 @@ SAP BTP Kyma environment is a fully managed Kubernetes-based environment that al
                                     Control (SMCTL)
 		CLI or APIs.")**  
 Consume SAP BTP services from any runtime environment by creating service instances and service bindings directly in your subaccount with the Service Manager Control \(SMCTL\) CLI or APIs.
--   **[Consuming SAP BTP Services from Kubernetes](consuming-sap-btp-services-from-kubernet-ba4fd1f.md "Kubernetes, also known as K8s, is an open-source environment for automating deployment,
-		scaling, and management of containerized applications. In the following sections, you'll
-		learn how to consume SAP BTP services from Kubernetes.")**  
-Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications. In the following sections, you'll learn how to consume SAP BTP services from Kubernetes.
+-   **[Consuming SAP BTP Services from Kubernetes](consuming-sap-btp-services-from-kubernet-ba4fd1f.md "Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized
+		applications.")**  
+Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications.
 
-**Parent topic:** [Consuming Services in SAP BTP](../consuming-services-in-sap-btp-f13b6c6.md "To use services in SAP BTP, you creatе a service instance, using either the SAP BTP cockpit, or the command-line tools of your runtime platform, for example, the Cloud Foundry environment Command Line Interface (cf CLI), and create bindings to retrieve access credentials.")
+**Parent topic:** [Consuming Services in SAP BTP](../consuming-services-in-sap-btp-f13b6c6.md "To use services in SAP BTP, you creatе a service instance, using either the SAP BTP cockpit, or the command-line tool of your runtime platform (for example SAP BTP Command Line Interface) and create bindings to retrieve access credentials.")
 
 **Related Information**  
 

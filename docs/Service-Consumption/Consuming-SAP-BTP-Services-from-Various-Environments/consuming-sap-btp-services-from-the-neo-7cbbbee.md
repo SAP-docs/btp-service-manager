@@ -19,5 +19,5 @@ For more information, see [Using Services in the Neo Environment](https://help.s
 
 [Consuming Services in Other Environments Using the SAP Service Manager Instances](consuming-services-in-other-environments-0714ac2.md "Consume SAP BTP services from any runtime environment by creating service instances and service bindings directly in your subaccount with the Service Manager Control (SMCTL) CLI or APIs.")
 
-[Consuming SAP BTP Services from Kubernetes](consuming-sap-btp-services-from-kubernet-ba4fd1f.md "Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications. In the following sections, you'll learn how to consume SAP BTP services from Kubernetes.")
+[Consuming SAP BTP Services from Kubernetes](consuming-sap-btp-services-from-kubernet-ba4fd1f.md "Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications.")
 

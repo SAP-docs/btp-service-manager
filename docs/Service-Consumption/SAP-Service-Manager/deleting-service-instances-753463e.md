@@ -29,7 +29,7 @@ Delete service instances that you created in your subaccount by using the SAP BT
 
 
 > ### Note:  
-> You can only delete instances that are not bound to applications.
+> You can delete instances that are bound to applications and have active service keys or bindings.
 > 
-> If your instance has service bindings or service keys, you are prompted to delete those first.
+> If your instance has service keys or bindings, you will receive a message during the deletion informing you about them.
 

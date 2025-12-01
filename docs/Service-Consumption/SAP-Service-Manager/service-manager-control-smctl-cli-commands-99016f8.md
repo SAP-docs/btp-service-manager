@@ -2,22 +2,25 @@
 
 # Service Manager Control \(SMCTL\) CLI Commands
 
-A list of all tasks and respective commands that are available in the SMCTL for SAP BTP.
+See the list of all SMCTL commands available for the Service Manager resources.
 
-All commands are executed in the global account. If you want to work in a specific subaccount or directory, we recommend to set the default context once by using `sapcp target`. This way, you do not have to pass the subaccount or directory parameter with every command.
+You can get help about each command directly in the SMCTL, by using the `--help` flag.
 
-You can find extensive help about each command directly in the SMCTL by using the `--help` option. For example, use `sapcp --help list accounts/subaccount` for help on how to use `sapcp list accounts/subaccount`.
+> ### Example:  
+> Run `smctl register-platform --help` to get information about how to use `smctl register-platform`.
+
+Each SMCTL command has command-specific and global flags. Latter are used by all SMCTL commands for Service Manager.
 
 The following commands are available:
 
--   login and logout
+-   Log In and Log Out
 
     -   [login](login-a8ed7cf.md)
 
     -   [logout](logout-54f7e42.md)
 
 
--   bindings
+-   Service Bindings
 
     -   [get-binding](get-binding-8495036.md)
 
@@ -28,7 +31,7 @@ The following commands are available:
     -   [unbind](unbind-19fadcd.md)
 
 
--   brokers
+-   Service Brokers
 
     -   [register-broker](register-broker-3e7a312.md)
 
@@ -39,7 +42,7 @@ The following commands are available:
     -   [delete-broker](delete-broker-f3018c2.md)
 
 
--   platforms
+-   Platforms
 
     -   [register-platform](register-platform-4fe2d10.md)
 
@@ -50,7 +53,7 @@ The following commands are available:
     -   [delete-platform](delete-platform-be41510.md)
 
 
--   instances
+-   Service Instances
 
     -   [provision](provision-b327b66.md)
 
@@ -61,16 +64,19 @@ The following commands are available:
     -   [deprovision](deprovision-f48502c.md)
 
 
--   offerings
+-   Service Offerings
 
     -   [list-offerings](list-offerings-8a0659f.md)
-
-    -   [list-plans](list-plans-b0e4863.md)
 
     -   [marketplace](marketplace-ae6874a.md)
 
 
--   other commands
+-   Service Plans
+
+    -   [list-plans](list-plans-b0e4863.md)
+
+
+-   Miscellaneous
 
     -   [status](status-37936ee.md)
 
@@ -99,8 +105,6 @@ The following commands are available:
 
 **Related Information**  
 
-
-[Set the Default Command Context](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/720645a3ed3945bd8d97a670b948ac07.html)
 
 [Using the Service Manager Control \(SMCTL\) Command-Line Tool](using-the-service-manager-control-smctl-command-line-tool-0107f3f.md "Use the Service Manager Control (SMCTL) command-line tool to manage environments, brokers, service instances, and service bindings in SAP Service Manager environment.")
 

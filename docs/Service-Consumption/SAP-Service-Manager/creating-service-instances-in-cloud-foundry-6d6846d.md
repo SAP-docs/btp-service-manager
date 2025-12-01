@@ -4,7 +4,7 @@
 
 # Creating Service Instances in Cloud Foundry
 
-The service instances that you create in your Cloud Foundry org enable your Cloud Foundry apps to consume services natively from Cloud Foundry.
+The service instances that you create in your Cloud Foundry environment instance enable your Cloud Foundry apps to consume services natively from Cloud Foundry.
 
 
 
@@ -22,7 +22,7 @@ For more information, see [Configure Entitlements and Quotas for Subaccounts](ht
 
 ## Procedure
 
-You can create instances from your subaccount or from a Cloud Foundry space.
+You can create instances either directly from your subaccount or from a Cloud Foundry org.
 
 
 
@@ -40,7 +40,7 @@ You can create instances from your subaccount or from a Cloud Foundry space.
 
     A wizard opens, offering you to configure your new instance:
 
-    1.  **Enter basic info for your instance**
+    1.  **Enter basic info for your instance.**
 
         Choose a service for which you wish to create an instance from the dropdown list.
 
@@ -57,7 +57,7 @@ You can create instances from your subaccount or from a Cloud Foundry space.
         > 
         > CLI-friendly name is a short string \(up to 32 characters\) that only contains alphanumeric characters \(A-Z, a-z\), numbers from 0 to 9, periods, underscores, and hyphens.
         > 
-        > It can’t contain white spaces.
+        > It can’t contain whitespace characters.
 
     6.  **\(Optional\) Configure instance parameters**
 
@@ -68,11 +68,11 @@ You can create instances from your subaccount or from a Cloud Foundry space.
         > 
         > These parameters are provided in a JSON object with a schema that defines the properties for which to provide values, either in-line or as a file to upload.
         > 
-        > For your convenience, we have prepopulated JSON schema with properties for those services that support this feature, so you only need to provide values.
+        > For your convenience, we've prepopulated JSON schema with properties for those services that support this feature, so you only need to provide values.
         > 
         > For additional information about the supported configuration parameters, see the documentation of a particular service offering.
 
-    7.  **Review and verify the instance details**
+    7.  **Review and verify the instance details.**
 
         Use the preview to verify the instance details, then choose *Create*.
 
@@ -129,6 +129,6 @@ For more information, see [Labels](https://help.sap.com/products/BTP/65de2977205
     > 
     > You can see the existing labels under the *Labels* column.
     > 
-    > If you do not see the column, unhide it by clicking on :gear:.
+    > If you don't see the column, unhide it by clicking on :gear:.
 
 

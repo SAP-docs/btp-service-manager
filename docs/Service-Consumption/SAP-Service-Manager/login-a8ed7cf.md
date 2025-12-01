@@ -2,6 +2,8 @@
 
 # login
 
+Authenticates a user against a Service Manager instance.
+
 
 
 <a name="loioa8ed7cf2a2e44dd890b7d11eb691ed75__section_xcr_2nt_pkb"/>
@@ -11,8 +13,6 @@
 
 
 ***smctl login*** 
-
-Authenticates user against a SAP Service Manager instance.
 
 
 
@@ -90,7 +90,11 @@ No
 Use it to add more parameters. Parameters are specified as `key=value` pairs.
 
 > ### Note:  
-> The `subdomain` parameter is mandatory for login.
+> -   You must have an assigned *Subaccount Service Administrator* role. For more information, see [Assign the Subaccount Service Administrator Collection](assign-the-subaccount-service-administrator-collection-0735965.md).
+> 
+> -   The `subdomain` parameter is mandatory for login. Its value is the *Subdomain* of your subaccount, found in the SAP BTP cockpit on the subaccount *Overview* page.
+> 
+> .
 
 
 
@@ -368,7 +372,7 @@ No
 ## Password Flow Login Examples
 
 ```
-> smctl login -a https://service-management-url.com
+> smctl login -a https://service-management-url.com --param subdomain=<my_subaccount_subdomain_name>
 
 User: user                # entering username
 Password:                 # entering password (password visibility is disabled)
@@ -376,7 +380,7 @@ Logged in successfully.
 ```
 
 ```
-> smctl login -a https://service-management-url.com -u user -p pass
+> smctl login -a https://service-management-url.com --param subdomain=<my_subaccount_subdomain_name> -u user -p pass  
 
 Logged in successfully.
 ```
@@ -392,7 +396,7 @@ Logged in successfully.
 ### Client Credentials with the Default Type
 
 ```
-> smctl login -a https://service-manager-url.com --auth-flow=client-credentials --client-id=id --client-secret=secret
+> smctl login -a https://service-manager-url.com --param subdomain=<my_subaccount_subdomain_name> --auth-flow=client-credentials --client-id=id --client-secret=secret
 
           Logged in successfully.
 
@@ -403,7 +407,7 @@ Logged in successfully.
 ### Client Credentials with the X.509 Type
 
 ```
-smctl login -a https://service-manager-url.com --auth-flow=client-credentials --client-id=id --cert=cert.pem --key=key.pem
+smctl login -a https://service-manager-url.com --param subdomain=<my_subaccount_subdomain_name> --auth-flow=client-credentials --client-id=id --cert=cert.pem --key=key.pem
 
         Logged in successfully.
 ```
@@ -416,5 +420,5 @@ smctl login -a https://service-manager-url.com --auth-flow=client-credentials --
 **Related Information**  
 
 
-[Logging in to SAP Service Manager](logging-in-to-sap-service-manager-22dea57.md)
+[Logging in to SAP Service Manager](logging-in-to-sap-service-manager-22dea57.md "Describes the procedure to access the SAP Service Manager using the Service Manager Control (SMCTL) Command-Line tool.")
 

@@ -2,15 +2,17 @@
 
 # Create a SAP Service Manager Instance and Binding
 
-The SAP Service Manager APIs are protected with OAuth 2.0 client credentials. This document describes the general steps you need to perform to create an OAuth client and obtain an access token to call the SAP Service Manager APIs, and shows a detailed example of the procedure in the Cloud Foundry environment.
+The SAP Service Manager APIs are protected with OAuth 2.0 client credentials. This document describes the steps you need to perform to create an OAuth client and obtain an access token to call the SAP Service Manager APIs, and shows a detailed example of the procedure in the Cloud Foundry environment.
 
 
 
 <a name="loio1ca5bbeac19340ce959e82b51b2fde1e__section_ugp_ywd_4nb"/>
 
-## General Procedure
+## Procedure
 
 1.  Create a SAP Service Manager service instance with one of the [SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md).
+
+    For more information about how to create an instance, see [Creating Service Instances](creating-service-instances-fad874a.md).
 
 2.  Create a binding object \(service key in the Cloud Foundry environment\) for the SAP Service Manager instance.
 
@@ -43,7 +45,7 @@ The SAP Service Manager APIs are protected with OAuth 2.0 client credentials. Th
     
     ```
 
-    To create a binding object with the X.509 credentials type, run the following command:
+    To create a binding object with the X.509 credentials type, run the following command by using the Service Manager Control \(SMCTL\) command-line tool. For more information about SMCTL, see [Using the Service Manager Control \(SMCTL\) Command-Line Tool](using-the-service-manager-control-smctl-command-line-tool-0107f3f.md):
 
     ```
     smctl bind <sm_instance_name> <sm_binding_name> -c {"credential-type":"x509"}

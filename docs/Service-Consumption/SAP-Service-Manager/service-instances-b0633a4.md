@@ -15,11 +15,9 @@ In the navigation bar of the SAP BTP cockpit, select *Services*→*Instances and
 
 All created service instances in your account appear under a single table.
 
-Selecting a specific instance opens a preview window with basic information and *Create* button in the top-right corner.
+Selecting a specific instance opens a preview window with basic information, such as its ID, service, plan.
 
-Choosing this button opens a wizard that guides you through the steps to create a new instance.
-
-There are more actions you can perform on a selected instance, depending on the environment to which your instance belongs.
+There are actions you can perform on a selected instance, depending on the environment to which your instance belongs.
 
 -   **[Creating Service Instances](creating-service-instances-fad874a.md "Create service instance to start consuming the service of your choice.")**  
 Create service instance to start consuming the service of your choice.

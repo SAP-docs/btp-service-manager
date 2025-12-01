@@ -20,9 +20,9 @@ Create service instance to start consuming the service of your choice.
 
 [Creating Instances in Other Environments](creating-instances-in-other-environments-bf71f6a.md)
 
--   **[Creating Service Instances in Cloud Foundry](creating-service-instances-in-cloud-foundry-6d6846d.md "The service instances that you create in your Cloud Foundry org enable your Cloud Foundry apps to consume services natively from Cloud
-		Foundry.")**  
-The service instances that you create in your Cloud Foundry org enable your Cloud Foundry apps to consume services natively from Cloud Foundry.
+-   **[Creating Service Instances in Cloud Foundry](creating-service-instances-in-cloud-foundry-6d6846d.md "The service instances that you create in your Cloud Foundry environment instance enable your Cloud Foundry apps to consume services
+		natively from Cloud Foundry.")**  
+The service instances that you create in your Cloud Foundry environment instance enable your Cloud Foundry apps to consume services natively from Cloud Foundry.
 -   **[Creating User-Provided Service Instances in Cloud Foundry Environment](creating-user-provided-service-instances-in-cloud-foundry-environment-7c0125b.md "User-provided service instances enable you to use services that aren’t available in the
 		service marketplace with your apps running in Cloud Foundry Environment.")**  
 User-provided service instances enable you to use services that aren’t available in the service marketplace with your apps running in Cloud Foundry Environment.

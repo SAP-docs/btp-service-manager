@@ -6,7 +6,12 @@
 
 ## Procedure
 
-1.  Register a subaccount-scoped cluster.
+1.  > ### Caution:  
+    > This consuming option is out-of-date. We strongly recommend that you [consume SAP BTP services in Kubernetes with SAP BTP service operator](https://help.sap.com/docs/service-manager/sap-service-manager/consuming-sap-btp-services-in-kubernetes-with-sap-btp-service-operator?version=Cloud).
+    > 
+    > If you're already using SAP Service Manager Broker Proxy \(Service Catalog\), then first get familiar with how to [migrate from svcat to SAP BTP service operator](https://help.sap.com/docs/service-manager/sap-service-manager/migrating-from-svcat-to-sap-btp-service-operator?version=Cloud).
+
+    Register a subaccount-scoped cluster.
 
     ```
     smctl register-platform <platform name> kubernetes

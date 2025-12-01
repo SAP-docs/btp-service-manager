@@ -34,7 +34,7 @@ Scopes
 <tr>
 <td valign="top">
 
-Subaccount-admin
+subaccount-admin
 
 
 
@@ -66,7 +66,7 @@ Allows to manage resources in the subaccount in which the *service-manager* inst
 <tr>
 <td valign="top">
 
-Subaccount-audit
+subaccount-audit
 
 
 
@@ -94,7 +94,7 @@ Allows read-only access to the resources in the subaccount in which the*service-
 <tr>
 <td valign="top">
 
-Container
+container
 
 
 
@@ -116,6 +116,29 @@ Allows management of service instances and bindings in a reduced scope that corr
 
 -   subaccount.service\_offering.read
 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+service-operator-access
+
+
+
+</td>
+<td valign="top">
+
+Provides credentials for SAP BTP service operator to access SAP BTP from a Kubernetes cluster.
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 

@@ -138,6 +138,75 @@ Yes
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`-e`, `--environment`
+
+
+
+</td>
+<td valign="top">
+
+Shows plans by specified environments. Valid values: Cloud Foundry, Kubernetes.
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`-f`, `--field--query`
+
+
+
+</td>
+<td valign="top">
+
+Filters plans by field query.
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`-l`, `--label-query`
+
+
+
+</td>
+<td valign="top">
+
+Filters fields by label query.
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
 </table>
 
 

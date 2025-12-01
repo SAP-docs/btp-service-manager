@@ -95,7 +95,7 @@ No
 <tr>
 <td valign="top">
 
-`-c``--parameters`
+`-c`, `--parameters`
 
 
 
