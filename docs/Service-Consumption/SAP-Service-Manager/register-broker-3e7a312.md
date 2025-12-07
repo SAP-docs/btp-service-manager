@@ -10,7 +10,7 @@
 
 
 
-***smctl register-broker*** 
+`smctl register-broker` 
 
 Registers a broker in the SAP Service Manager instance.
 
@@ -43,14 +43,10 @@ Registers a broker in the SAP Service Manager instance.
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -59,21 +55,15 @@ Global Flag
 
 `-b`, `--basic`
 
-
-
 </td>
 <td valign="top">
 
-Sets the username and password for basic authentication. Format is ***<username:password\>***.
-
-
+Sets the username and password for basic authentication. Format is `<username:password>`.
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -86,14 +76,10 @@ No
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -102,21 +88,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `register-broker` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -125,21 +105,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -148,21 +122,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -171,21 +139,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

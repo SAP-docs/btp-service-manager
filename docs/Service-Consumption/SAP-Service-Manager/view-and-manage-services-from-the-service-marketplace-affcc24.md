@@ -30,7 +30,7 @@ Use an intuitive wizard that guides you step by step through the procedure.
 
 There are two ways you can access this wizard on the Service Marketplace page:
 
--   Click on <span class="SAP-icons"></span> \(Create\) in the top-right corner of a selected tile. A wizard opens.
+-   Click on <span class="SAP-icons-V5"></span> \(Create\) in the top-right corner of a selected tile. A wizard opens.
 
 -   If you’re viewing details of a specific service, click on *Create* in the top-right corner.
 

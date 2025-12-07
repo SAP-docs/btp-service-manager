@@ -50,7 +50,7 @@ You have an SAP Business Technology Platform subaccount.
 
 ### Consuming Services with the Service Manager Control \(SMCTL\) CLI
 
- **Prerequisites** 
+**Prerequisites** 
 
 -   You’re logged on to your subaccount.
 
@@ -105,7 +105,7 @@ You have an SAP Business Technology Platform subaccount.
 
 ### Consuming Services with the SAP Service Manager APIs
 
- **Prerequisites** 
+**Prerequisites** 
 
 -   You have obtained an API access token. For more information, see [Accessing the APIs](../SAP-Service-Manager/accessing-the-apis-93711c1.md).
 
@@ -174,7 +174,7 @@ You have an SAP Business Technology Platform subaccount.
 
 You can now consume the `xsuaa` service in the environment of your choice.
 
-**Parent topic:** [Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
+**Parent topic:**[Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
 
 **Related Information**  
 

@@ -22,7 +22,7 @@ You can assign users from default identity providers, and from custom identity p
 
 1.  Open the SAP BTP cockpit.
 
-2.  Go to your global account and subaccount \(see \).
+2.  Go to your global account and subaccount \(see  <?sap-ot O2O class="- topic/xref " href="0874895f1f78459f9517da55a11ffebd.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/bmb1698152178692/loiofe9c1a8a56a7429f96692cdcd657816c_en-US/src/content/localization/en-us/0735965d10b342a393b5a83924dba9b4.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> \).
 
 3.  Choose *Security* \> *Role Collections*.
 

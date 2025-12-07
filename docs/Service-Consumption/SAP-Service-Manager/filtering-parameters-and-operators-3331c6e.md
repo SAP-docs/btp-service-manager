@@ -8,7 +8,7 @@ Use various combinations of filtering parameters to optimize the results of the 
 
 The resources to which these parameters apply are: platforms, service brokers, service instances, service bindings, service plans, and service offerings.
 
-Check the SAP Service Manager API section of [SAP Business Accelerator Hub](https://api.sap.com/api/APIServiceManagment/resource) for more details about the Get all APIs for each of the resources.
+Check the SAP Service Manager API section of [SAP Business Accelerator Hub](https://api.sap.com/api/APIServiceManager/overview) for more details about the Get all APIs for each of the resources.
 
 
 
@@ -27,21 +27,15 @@ You can control filtering with the following query parameters:
 
 Parameter Name
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -50,14 +44,10 @@ Description
 
 `fieldQuery`
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -78,14 +68,10 @@ Must be a nonempty string.
 
 `labelQuery`
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -97,8 +83,6 @@ Must be a nonempty string.
 > ### Example:  
 
 `environment eq 'dev'`
-
-
 
 </td>
 </tr>
@@ -157,21 +141,15 @@ The table shows all the supported operators that you can use to filter the resul
 
 Operator
 
-
-
 </th>
 <th valign="top">
 
 Field Query
 
-
-
 </th>
 <th valign="top">
 
 Label Query
-
-
 
 </th>
 </tr>
@@ -182,21 +160,15 @@ Label Query
 
 \(equal\)
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value matches the literal. False otherwise.
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the label exists and one label value matches the literal. False otherwise.
-
-
 
 </td>
 </tr>
@@ -207,21 +179,15 @@ Evaluates to true if the label exists and one label value matches the literal. F
 
 \(equal or null\)
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value matches the literal or if the field value is `null`. False otherwise.
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the label exists and one label value matches the literal, or if the label doesn't exist. False otherwise.
-
-
 
 </td>
 </tr>
@@ -232,21 +198,15 @@ Evaluates to true if the label exists and one label value matches the literal, o
 
 \(not equal\)
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value doesn’t match the literal. False otherwise.
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the label exists and no label value matches the literal. False otherwise.
-
-
 
 </td>
 </tr>
@@ -255,21 +215,15 @@ Evaluates to true if the label exists and no label value matches the literal. Fa
 
 `in`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value matches at least one value in the list of literals. False otherwise.
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the label exists and the label value matches at least one value in the list of literals. False otherwise.
-
-
 
 </td>
 </tr>
@@ -278,21 +232,15 @@ Evaluates to true if the label exists and the label value matches at least one v
 
 `notin`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value doesn’t match any value in the list of literals. False otherwise.
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the label exists and no label value matches any value in the list of literals. False otherwise.
-
-
 
 </td>
 </tr>
@@ -301,21 +249,15 @@ Evaluates to true if the label exists and no label value matches any value in th
 
 `and`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if both the left and right operands evaluate to true. False otherwise.
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if both the left and right operands evaluate to true. False otherwise.
-
-
 
 </td>
 </tr>
@@ -324,21 +266,15 @@ Evaluates to true if both the left and right operands evaluate to true. False ot
 
 `contains`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the literal is part of the field value. False otherwise.
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the literal is part of the label value. False otherwise.
-
-
 
 </td>
 </tr>
@@ -353,14 +289,10 @@ The following operators apply only to the field query:
 
 Operator
 
-
-
 </th>
 <th valign="top">
 
 Field Query
-
-
 
 </th>
 </tr>
@@ -369,14 +301,10 @@ Field Query
 
 `gt`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value is greater than the literal. False otherwise.
-
-
 
 </td>
 </tr>
@@ -385,14 +313,10 @@ Evaluates to true if the field value is greater than the literal. False otherwis
 
 `ge`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value is greater than, or equal to the literal. False otherwise.
-
-
 
 </td>
 </tr>
@@ -401,14 +325,10 @@ Evaluates to true if the field value is greater than, or equal to the literal. F
 
 `lt`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value is less than the literal. False otherwise.
-
-
 
 </td>
 </tr>
@@ -417,14 +337,10 @@ Evaluates to true if the field value is less than the literal. False otherwise.
 
 `le`
 
-
-
 </td>
 <td valign="top">
 
 Evaluates to true if the field value is less than, or equal to the literal. False otherwise.
-
-
 
 </td>
 </tr>

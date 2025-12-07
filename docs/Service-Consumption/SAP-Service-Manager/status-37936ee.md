@@ -10,7 +10,7 @@
 
 
 
-***smctl status*** 
+`smctl status` 
 
 Get the status of an asynchronous operation.
 
@@ -35,14 +35,10 @@ Get the status of an asynchronous operation.
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -51,21 +47,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `status` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -74,21 +64,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -97,21 +81,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -120,21 +98,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

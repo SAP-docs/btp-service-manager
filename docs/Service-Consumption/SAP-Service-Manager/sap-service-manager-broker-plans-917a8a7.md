@@ -13,21 +13,15 @@ Describes the SAP Service Manager plans.
 
 Broker Plans
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Scopes
-
-
 
 </th>
 </tr>
@@ -36,14 +30,10 @@ Scopes
 
 subaccount-admin
 
-
-
 </td>
 <td valign="top">
 
 Allows to manage resources in the subaccount in which the *service-manager* instance of this plan was created. This includes managing subaccount scoped brokers, platforms, instances and bindings and also reading services, plans and visibilities.
-
-
 
 </td>
 <td valign="top">
@@ -68,14 +58,10 @@ Allows to manage resources in the subaccount in which the *service-manager* inst
 
 subaccount-audit
 
-
-
 </td>
 <td valign="top">
 
 Allows read-only access to the resources in the subaccount in which the*service-manager* instance was created. This includes reading subaccount scoped brokers, platforms, instances and bindings, services, plans, and visibilities.
-
-
 
 </td>
 <td valign="top">
@@ -96,14 +82,10 @@ Allows read-only access to the resources in the subaccount in which the*service-
 
 container
 
-
-
 </td>
 <td valign="top">
 
 Allows management of service instances and bindings in a reduced scope that corresponds to the service instance. Instances created using the binding credentials of the container instance are visible from the instance itself and from instances of the subaccount-\* plans, but not from other container instances.
-
-
 
 </td>
 <td valign="top">
@@ -126,21 +108,15 @@ Allows management of service instances and bindings in a reduced scope that corr
 
 service-operator-access
 
-
-
 </td>
 <td valign="top">
 
 Provides credentials for SAP BTP service operator to access SAP BTP from a Kubernetes cluster.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

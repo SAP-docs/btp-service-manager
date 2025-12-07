@@ -10,7 +10,7 @@
 
 
 
-***smctl bind*** 
+`smctl bind` 
 
 Creates a binding to a specific instance in the SAP Service Manager.
 
@@ -35,14 +35,10 @@ Creates a binding to a specific instance in the SAP Service Manager.
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -51,21 +47,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `bind` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -74,21 +64,15 @@ No
 
 `--mode`
 
-
-
 </td>
 <td valign="top">
 
-How calls to SAP Service Manager are performed. Possible values: ***sync*** or ***async*** \(the default is ***async***\).
-
-
+How calls to SAP Service Manager are performed. Possible values: `sync` or `async` \(the default is `async`\).
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -97,21 +81,15 @@ No
 
 `-c`, `--parameters`
 
-
-
 </td>
 <td valign="top">
 
 A valid JSON object containing the instance parameters.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -120,21 +98,15 @@ No
 
 `-id`
 
-
-
 </td>
 <td valign="top">
 
 ID of the service instance. Required when the service instance name is ambiguous.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -143,21 +115,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -166,21 +132,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -189,21 +149,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -215,7 +169,7 @@ Yes
 
 ## Example
 
-***async*** execution:
+`async` execution:
 
 ```
 > smctl bind sample-instance sample-binding
@@ -233,7 +187,7 @@ Checking the status of the call:
 | State  | succeeded                             |
 ```
 
-***sync*** execution:
+`sync` execution:
 
 ```
 smctl bind sample-instance sample-binding --mode sync

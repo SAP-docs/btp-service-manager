@@ -2,7 +2,7 @@
 
 # Rate Limiting
 
-Describes how all API requests to the SAP Service Manager adhere to rate-limiting rules.
+This topic describes how all API requests to SAP Service Manager adhere to rate-limiting rules.
 
 
 
@@ -10,15 +10,9 @@ Describes how all API requests to the SAP Service Manager adhere to rate-limitin
 
 ## About API Rate Limiting
 
-API rate limiting is, in a nutshell, limiting people \(and bots\) from accessing the API based on the rules set by the API’s operator or owner.
+API rate limiting restricts how often clients, whether users, services, or automated tools, can call the API. Rate limiting is both a security measure and a stability mechanism. It protects shared backend resources from excessive use and helps ensure consistent performance for all consumers.
 
-API rate limiting can be used as a defensive security measure for the API, and also a quality control method. As a shared service, the API must protect itself from excessive use to encourage an optimal experience for anyone using the API. Quality-wise, as all APIs operate on finite resources, rate limiting is essential to improve the availability of API service for many users as possible by avoiding excessive resource usages.
-
-All APIs define their own custom rate-limit rules for the number of requests per time window and per identified caller.
-
-API callers are identified through the authenticated requests associated with the username on the authenticated platform or with the OAuth client ID.
-
-When the rate limit is exceeded, the client receives the *HTTP 429 Too Many Requests* response status code.
+Each API group in SAP Service Manager defines specific limits for the number of allowed requests per minute and per hour. The limit applies per authenticated identity \(username or OAuth client ID\). When a client exceeds the limit, SAP Service Manager returns an HTTP 429 Too Many Requests error.
 
 
 
@@ -26,16 +20,27 @@ When the rate limit is exceeded, the client receives the *HTTP 429 Too Many Requ
 
 ## Service Manager APIs
 
-The Service Manager works with the following resources: platforms, service brokers, service bindings, service offerings, service plans, and service instances.
+SAP Service Manager hosts several API resource groups, such as:
 
-There's a dedicated group of APIs for each of the SAP Service Manager resources.
+-   Service Offerings
+-   Service Plans
+-   Service Instances
+-   Service Bindings
+-   Service Brokers
+-   Platforms
 
-The total number of requests that you can perform for all SAP Service Manager APIs together is 10,000 calls per hour and 1000 per minute.
+The following limits apply:
 
-While the same rate-limiting rule per hour and minute applies to all platform and service broker APIs, as well as all available GET APIs for the service instances group, different, and more restrictive rules apply to other Service Manager resource API groups. Refer to the details in the table below.
+**Global Limits**
 
-> ### Remember:  
-> All API calls executed in the same time frame \(minute and hour\) **count together** towards rate limits. See the examples below the table for more details.
+These apply across all SAP Service Manager APIs combined:
+
+-   1000 requests per minute
+-   10,000 requests per hour
+
+**Resource Group Limits**
+
+Each resource group also has its own limits:
 
 
 <table>
@@ -44,14 +49,15 @@ While the same rate-limiting rule per hour and minute applies to all platform an
 
 API Endpoint
 
+</th>
+<th valign="top">
 
+Maximum Calls per Hour
 
 </th>
 <th valign="top">
 
-Maximum Number of Calls per Timeframe
-
-
+Maximum Calls per Minute
 
 </th>
 </tr>
@@ -60,15 +66,15 @@ Maximum Number of Calls per Timeframe
 
 `/v1/service_bindings`
 
+</td>
+<td valign="top">
 
+6000
 
 </td>
 <td valign="top">
 
--   Hour: 6000
--   Minute: 600
-
-
+600
 
 </td>
 </tr>
@@ -77,15 +83,15 @@ Maximum Number of Calls per Timeframe
 
 `/v1/service_offerings`
 
+</td>
+<td valign="top">
 
+1000
 
 </td>
 <td valign="top">
 
--   Hour: 1000
--   Minute: 100
-
-
+100
 
 </td>
 </tr>
@@ -94,15 +100,15 @@ Maximum Number of Calls per Timeframe
 
 `/v1/service_plans`
 
+</td>
+<td valign="top">
 
+1000
 
 </td>
 <td valign="top">
 
--   Hour: 1000
--   Minute: 100
-
-
+100
 
 </td>
 </tr>
@@ -111,29 +117,85 @@ Maximum Number of Calls per Timeframe
 
 `/v1/service_instances`
 
+</td>
+<td valign="top">
 
+6000
 
 </td>
 <td valign="top">
 
--   Hour: 6000
--   Minute: 600
-
-> ### Note:  
-> `CREATE /v1/service_instances` is limited to 50 calls per minute.
-
-
+600
 
 </td>
 </tr>
 </table>
 
-> ### Example:  
-> -   You've called one of the `/v1/service_offerings` APIs 100 times within a minute. If you try to call any of the APIs in that same resource group again, you get the HTTP 429 response code. However, you can still call any of the `/v1/service_bindings` APIs up to 500 times within that same minute because their per-minute limit is 600 and you've already used 100 of them on another API resource group in that minute.
-> 
-> -   Let's say you've now used up all of the remaining 500 API calls for `/v1/service_bindings` APIs for that minute. If you try to call any of the APIs in that same resource group again within the same minute, you get the HTTP 429 response code. However, you still have up to 400 available API calls for any of the resource groups to which the 1000-per-minute rule applies because 1000-600 \(used calls\) = 400.
-> 
-> -   If you used all available 1000 API calls in that minute, for the same hour you still have up to: 10,000 available API calls for the hour - 1000 used API calls = 9000 API calls.
+**Special Limit for Creating Service Instances**
+
+The following endpoint has an additional, more restrictive limit:
+
+-   `POST /v1/service_instances` → 5 requests per minute
+
+
+This limit applies even if the general limit for the resource group or the global limit has not been reached.
+
+> ### Remember:  
+> All API calls made within the same time frame \(per minute and per hour\) count toward the global limit, regardless of resource group.
+
+
+
+<a name="loio97be6794829a441f99c9da04532a3c2b__section_kbx_qcv_3hc"/>
+
+## Examples
+
+-   **Exceeding a Resource-Group Limit**
+
+    You call `/v1/service_offerings` exactly 100 times in one minute.
+
+    This exhausts the 100-per-minute limit for that group.
+
+    -   Any further call to `/v1/service_offerings` within that minute returns `HTTP 429`.
+
+    -   However, you can still call `/v1/service_bindings` up to 600 times, as that group’s limit is independent.
+
+
+-   **Exceeding the Special `CREATE` Limit**
+
+    You issue 5 `POST /v1/service_instances` requests in the same minute.
+
+    -   The 6th POST request in that minute returns `HTTP 429,`
+
+        **even though**:
+
+        -   The service-instances group limit \(600/min\) is not reached
+
+        -   The global limit \(1000/min\) is not reached
+
+
+
+    This is because the `CREATE` operation has its own dedicated 5-per-minute limit.
+
+-   **Interaction with Global Limits**
+
+    Suppose, within one minute, you have made:
+
+    -   100 calls to`/v1/service_offerings`
+
+    -   600 calls to `/v1/service_bindings`
+
+    -   5 calls to `POST /v1/service_instances`
+
+
+    Together these calls add up to 705 calls for that minute.
+
+    -   Global remaining quota: 1000 − 705 = 295 calls.
+
+    -   You may still call other APIs in other groups until the total reaches 1000 for that minute.
+
+    -   When the 1000th call is made, further requests of *any* type return HTTP 429.
+
+
 
 
 
@@ -141,25 +203,21 @@ Maximum Number of Calls per Timeframe
 
 ## Response
 
-The error you receive after calling one of the `/v1/service_offerings` APIs 100 times within a minute and then one of the `/v1/service_bindings` 501 times within that same minute:
+A client that exceeds a per-minute limit receives a response similar to:
 
 ```
 HTTP/1.1 429 Too Many Requests
 {
-  "description": "The allowed request limit of 600 responses has been reached. Please try again later.Check the 'Retry-After' header value to see how long you need to wait."
+  "description": "The allowed request limit has been reached. Please try again later. Check the 'Retry-After' header to see how long you need to wait."
 }
 
 ```
 
-The example shows that there's also the `Retry-After` header value at your disposal. It indicates how long you need to wait before you can try again.
-
-The `Retry-After` header value is in HTTP-date format:
-
-`Date:<day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT`
+The response includes a `Retry-After`header indicating when you may resend your request:
 
 ```
-Retry-After
-Sun, 06 Nov 1994 08:49:37 GMT
+Retry-After: Sun, 06 Nov 1994 08:49:37 GMT
+
 
 ```
 

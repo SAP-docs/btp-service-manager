@@ -21,7 +21,7 @@ Create a service binding to obtain the access credentials to the service instanc
     > ### Recommendation:  
     > To narrow down your search, look for **Other Environments** under the *Runtime Environment* column of the Service Instances table.
 
-4.  In the service instance details section that opens to the right, select the Actions \(<span class="SAP-icons"></span> \) menu, and then *Create Binding*.
+4.  In the service instance details section that opens to the right, select the Actions \(<span class="SAP-icons-V5"></span> \) menu, and then *Create Binding*.
 
 5.  In the **New Binding** wizard, choose a name for your binding and provide configuration parameters either by uploading a JSON file or by configuring them in-line.
 

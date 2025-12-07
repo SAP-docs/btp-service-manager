@@ -10,7 +10,7 @@
 
 
 
-***smctl marketplace*** 
+`smctl marketplace` 
 
 Lists all service offerings with their service plans that are available in SAP Service Manager for this subaccount.
 
@@ -43,14 +43,10 @@ Lists all service offerings with their service plans that are available in SAP S
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -59,21 +55,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `marketplace` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -82,21 +72,15 @@ No
 
 `-s`, `--service`
 
-
-
 </td>
 <td valign="top">
 
 Detailed information about the plans of a specific service offering.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -105,21 +89,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -128,21 +106,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -151,21 +123,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

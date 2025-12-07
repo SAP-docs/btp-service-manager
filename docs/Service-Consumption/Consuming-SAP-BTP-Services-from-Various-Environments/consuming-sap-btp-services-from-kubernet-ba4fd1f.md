@@ -32,7 +32,7 @@ Learn how to consume SAP Business Technology Platform \(SAP BTP\) services using
 		platform.")**  
 Learn how to migrate a registered Kubernetes platform, based on the Kubernetes Service Catalog \(svcat\) and SAP Service Manager agent, together with its content, to an SAP BTP service operator-based platform.
 
-**Parent topic:** [Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
+**Parent topic:**[Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
 
 **Related Information**  
 

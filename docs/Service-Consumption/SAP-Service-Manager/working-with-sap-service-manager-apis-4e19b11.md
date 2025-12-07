@@ -10,15 +10,19 @@ The SAP Service Manager service API defines a centralized REST interface that al
 
 ## API Specifications in SAP Business Accelerator Hub
 
-Visit [SAP Business Accelerator Hub](https://api.sap.com/api/APIServiceManagment/resource) to view the list of all SAP Service Manager APIs, their specifications, and links to accompanying documentation.
+Visit [SAP Business Accelerator Hub](https://api.sap.com/api/APIServiceManager/overview) to view the list of all SAP Service Manager APIs, their specifications, and links to accompanying documentation.
 
 You can also try out the APIs.
 
+> ### Note:  
+> You have full CRUD \(Create, Read, Update, Delete\) capabilities for service instances associated in *Other Environments*. However, for Cloud Foundry and Kyma/Kubernetes environments, you can only view existing instances.
+
 -   **[Accessing the APIs](accessing-the-apis-93711c1.md)**  
 
--   **[Rate Limiting](rate-limiting-97be679.md "Describes how all API requests to the SAP Service
-                                Manager adhere to rate-limiting rules.")**  
-Describes how all API requests to the SAP Service Manager adhere to rate-limiting rules.
+-   **[Rate Limiting](rate-limiting-97be679.md "This topic describes how all API requests to SAP Service
+                                Manager adhere to
+		rate-limiting rules.")**  
+This topic describes how all API requests to SAP Service Manager adhere to rate-limiting rules.
 -   **[Filtering Parameters and Operators](filtering-parameters-and-operators-3331c6e.md "Use various combinations of filtering parameters to optimize the results of the
 		Get
 		all API calls of the SAP Service
@@ -31,5 +35,5 @@ Use various combinations of filtering parameters to optimize the results of the 
 
 [Accessing the APIs](accessing-the-apis-93711c1.md)
 
-[Rate Limiting](rate-limiting-97be679.md "Describes how all API requests to the SAP Service Manager adhere to rate-limiting rules.")
+[Rate Limiting](rate-limiting-97be679.md "This topic describes how all API requests to SAP Service Manager adhere to rate-limiting rules.")
 

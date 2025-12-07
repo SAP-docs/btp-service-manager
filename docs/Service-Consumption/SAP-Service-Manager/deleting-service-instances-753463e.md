@@ -23,7 +23,7 @@ Delete service instances that you created in your subaccount by using the SAP BT
 
     All existing service instances in your subaccount appear under a single table.
 
-2.  You delete an instance by selecting the Actions \(<span class="SAP-icons"></span> \) menu, and then *Delete Instance*.
+2.  You delete an instance by selecting the Actions \(<span class="SAP-icons-V5"></span> \) menu, and then *Delete Instance*.
 
     You can find the Actions menu either at the end of each instance's row, or in the top-right section of the service instance details area that opens to the right if you click on an instance row.
 

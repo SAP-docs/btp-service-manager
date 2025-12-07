@@ -28,10 +28,10 @@ Consume SAP BTP services from any runtime environment by creating service instan
 		applications.")**  
 Kubernetes, also known as K8s, is an open-source environment for automating deployment, scaling, and management of containerized applications.
 
-**Parent topic:** [Consuming Services in SAP BTP](../consuming-services-in-sap-btp-f13b6c6.md "To use services in SAP BTP, you creatе a service instance, using either the SAP BTP cockpit, or the command-line tool of your runtime platform (for example SAP BTP Command Line Interface) and create bindings to retrieve access credentials.")
+**Parent topic:**[Consuming Services in SAP BTP](../consuming-services-in-sap-btp-f13b6c6.md "SAP BTP provides a wide range of managed services, such as databases, messaging systems, authentication services, and application runtime components, that applications can easily consume as part of their architecture.")
 
 **Related Information**  
 
 
-[SAP Service Manager](../SAP-Service-Manager/sap-service-manager-3a27b85.md "SAP Service Manager service is the central registry for service brokers and platforms in SAP BTP.")
+[About SAP Service Manager](../SAP-Service-Manager/about-sap-service-manager-3a27b85.md "SAP Service Manager service is the central registry for service brokers and environments in SAP BTP.")
 

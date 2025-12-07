@@ -10,15 +10,9 @@ The SAP Service Manager API can be accessed using OAuth 2.0 access tokens issued
 
 ## Prerequisites
 
--   Obtain the credentials for SAP BTP cockpit to access services from SAP Business Technology Platform in your subaccount. See [Subscribing to SAP Service Manager \[Feature Set A\]](subscribing-to-sap-service-manager-feature-set-a-274d049.md).
+Assign the SAP Service Manager roles to the user. See [Assign the Subaccount Service Administrator Collection](assign-the-subaccount-service-administrator-collection-0735965.md).
 
-    > ### Note:  
-    > If you are using cloud management tools feature set B, you don't to obtain the credentials to subscribe to SAP Service Manager because the required role collections are automatically available to you without the whole subscription process.
-
--   Assign the SAP Service Manager roles to the user. See [Assign the Subaccount Service Administrator Collection](assign-the-subaccount-service-administrator-collection-0735965.md).
-
-    For more information about the scopes included in each role, see [SAP Service Manager Roles](sap-service-manager-roles-d95fbe7.md).
-
+For more information about the scopes included in each role, see [SAP Service Manager Roles](sap-service-manager-roles-d95fbe7.md).
 
 
 

@@ -30,7 +30,7 @@ Unlike service bindings that are used to automatically generate credentials, ser
 
 1.  Select a Cloud Foundry instance for which you want to create a service key.
 
-2.  In the service instance details area that opens to the right, select the Actions menu \(<span class="SAP-icons"></span>\).
+2.  In the service instance details area that opens to the right, select the Actions menu \(<span class="SAP-icons-V5"></span>\).
 
 3.  Choose *Create Service Key*.
 

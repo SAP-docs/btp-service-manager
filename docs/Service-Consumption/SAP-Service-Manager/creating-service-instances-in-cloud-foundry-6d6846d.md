@@ -122,7 +122,7 @@ For more information, see [Labels](https://help.sap.com/products/BTP/65de2977205
 
 2.  Find the instance to which you want to assign labels under the *Instances* section of the page.
 
-3.  Select the actions \(<span class="SAP-icons"></span>\) menu and from the dropdown list, choose *Add Labels*.
+3.  Select the actions \(<span class="SAP-icons-V5"></span>\) menu and from the dropdown list, choose *Add Labels*.
 
     > ### Note:  
     > If there are already labels assigned to the service instance, the action becomes *Change Labels*.

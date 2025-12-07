@@ -1,11 +1,8 @@
 <!-- loio4dceb6a597274c65b255a400bb837400 -->
 
-# SAP Service Manager Commands for SAP BTP Command Line Interface \(btp CLI\) \[Feature Set B\]
+# Using the SAP BTP Command Line Interface \(btp CLI\)
 
 Use the SAP BTP command line interface to work with the SAP Service Manager resources.
-
-> ### Note:  
-> The content in this section is only relevant for cloud management tools feature set B.
 
 
 

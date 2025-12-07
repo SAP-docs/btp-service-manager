@@ -6,17 +6,12 @@ The SAP Service Manager API can be accessed using OAuth 2.0 access tokens issued
 
 Client credentials can be obtained by creating a `service-manager` service instance and binding.
 
--   [Create a SAP Service Manager Instance and Binding](create-a-sap-service-manager-instance-and-binding-1ca5bbe.md)
+Learn more at [Create an SAP Service Manager Instance and Binding](create-an-sap-service-manager-instance-and-binding-1ca5bbe.md).
 
--   [Retrieve an OAuth 2.0 Access Token](retrieve-an-oauth-2-0-access-token-b6822e6.md)
-
-
--   **[Create a SAP Service Manager Instance and Binding](create-a-sap-service-manager-instance-and-binding-1ca5bbe.md "The SAP Service
-                                Manager APIs are protected with OAuth 2.0 client
-		credentials. This document describes the steps you need to perform to create an OAuth client and obtain an access token to call the SAP Service
-                                Manager APIs, and shows a detailed example of the procedure in the
-		Cloud Foundry environment.")**  
-The SAP Service Manager APIs are protected with OAuth 2.0 client credentials. This document describes the steps you need to perform to create an OAuth client and obtain an access token to call the SAP Service Manager APIs, and shows a detailed example of the procedure in the Cloud Foundry environment.
+-   **[Create an SAP Service Manager Instance and Binding](create-an-sap-service-manager-instance-and-binding-1ca5bbe.md "Learn how to create an OAuth client and obtain access credentials to call the SAP Service
+                                Manager APIs. The APIs are protected with OAuth 2.0 client
+		credentials.")**  
+Learn how to create an OAuth client and obtain access credentials to call the SAP Service Manager APIs. The APIs are protected with OAuth 2.0 client credentials.
 -   **[Retrieve an OAuth 2.0 Access Token](retrieve-an-oauth-2-0-access-token-b6822e6.md)**  
 
 

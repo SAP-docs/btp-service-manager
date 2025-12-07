@@ -12,7 +12,7 @@ Authenticates a user against a Service Manager instance.
 
 
 
-***smctl login*** 
+`smctl login` 
 
 
 
@@ -43,14 +43,10 @@ Authenticates a user against a Service Manager instance.
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -59,21 +55,15 @@ Global Flag
 
 `-a`, `--url`
 
-
-
 </td>
 <td valign="top">
 
 Base URL for SAP Service Manager.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -81,8 +71,6 @@ No
 <td valign="top">
 
 `--param`
-
-
 
 </td>
 <td valign="top">
@@ -103,8 +91,6 @@ Use it to add more parameters. Parameters are specified as `key=value` pairs.
 
 No
 
-
-
 </td>
 </tr>
 </table>
@@ -116,14 +102,10 @@ No
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -132,21 +114,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for the `login` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -155,21 +131,15 @@ No
 
 `-p`, `--password`
 
-
-
 </td>
 <td valign="top">
 
 User password
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -178,21 +148,15 @@ No
 
 `--skip-ssl-validation`
 
-
-
 </td>
 <td valign="top">
 
 Skip verification of the OAuth endpoint. Not recommended.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -201,21 +165,15 @@ No
 
 `-u`, `--user`
 
-
-
 </td>
 <td valign="top">
 
 User ID
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -224,21 +182,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -247,21 +199,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use the verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -269,8 +215,6 @@ Yes
 <td valign="top" colspan="2">
 
 `–-auth-flow`
-
-
 
 </td>
 <td valign="top">
@@ -286,14 +230,10 @@ You have the following two options:
 
 If not specified, `password` flow is used.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -302,30 +242,22 @@ No
 
 `--client-id`
 
-
-
 </td>
 <td valign="top">
 
 `--client-secret`
-
-
 
 </td>
 <td valign="top">
 
 You specify these parameters if you chose the `client-credentials` authorization flow and if you created the binding object with the **default** credentials type.
 
-See the example of a binding object created with the default credentials type: [Create a SAP Service Manager Instance and Binding](create-a-sap-service-manager-instance-and-binding-1ca5bbe.md).
-
-
+See the example of a binding object created with the default credentials type: [Create an SAP Service Manager Instance and Binding](create-an-sap-service-manager-instance-and-binding-1ca5bbe.md).
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -334,14 +266,10 @@ No
 
 `--cert`
 
-
-
 </td>
 <td valign="top">
 
 `–-key`
-
-
 
 </td>
 <td valign="top">
@@ -350,16 +278,12 @@ You specify these parameters if you chose the `client-credentials` authorization
 
 Their values are paths to files that contain public and private keys respectively that were generated upon the creation of the binding object with X.509 credentials type.
 
-See the example of a binding object created with X.509 credentials type: [Create a SAP Service Manager Instance and Binding](create-a-sap-service-manager-instance-and-binding-1ca5bbe.md).
-
-
+See the example of a binding object created with X.509 credentials type: [Create an SAP Service Manager Instance and Binding](create-an-sap-service-manager-instance-and-binding-1ca5bbe.md).
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -420,5 +344,5 @@ smctl login -a https://service-manager-url.com --param subdomain=<my_subaccount_
 **Related Information**  
 
 
-[Logging in to SAP Service Manager](logging-in-to-sap-service-manager-22dea57.md "Describes the procedure to access the SAP Service Manager using the Service Manager Control (SMCTL) Command-Line tool.")
+[Logging in to SAP Service Manager](logging-in-to-sap-service-manager-22dea57.md "")
 

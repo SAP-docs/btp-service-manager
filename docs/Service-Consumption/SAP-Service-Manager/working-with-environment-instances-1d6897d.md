@@ -26,7 +26,7 @@ Environments are offered in the *Service Marketplace* of the SAP BTP cockpit tog
 
 To find them in your subaccount, from the navigation bar select *Services* \> *Service Marketplace*, and then from the dropdown menu of the *All Types* filter, select *Environments*.
 
-Choose the tile of the environment that you want to enable for consumption in your subaccount, and then in the top-right corner of the tile, select <span class="SAP-icons"></span> \(Create\) to open the wizard to manually configure your environment instance.
+Choose the tile of the environment that you want to enable for consumption in your subaccount, and then in the top-right corner of the tile, select <span class="SAP-icons-V5"></span> \(Create\) to open the wizard to manually configure your environment instance.
 
 Currently, you can enable the Cloud Foundry or Kyma environment.
 
@@ -70,7 +70,7 @@ For more information, see [Labels](https://help.sap.com/products/BTP/65de2977205
 
 2.  Find the instance to which you want to assign labels under the *Environment* section of the page.
 
-3.  Select the actions \(<span class="SAP-icons"></span>\) menu and from the dropdown list, choose *Add Labels*.
+3.  Select the actions \(<span class="SAP-icons-V5"></span>\) menu and from the dropdown list, choose *Add Labels*.
 
     > ### Note:  
     > If there are already labels assigned to the service instance, the action becomes *Change Labels*.

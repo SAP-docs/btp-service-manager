@@ -8,7 +8,7 @@ Read more about creating service instances and creating connections between inst
 
 For an example of using the SAP S/4HANA Cloud Extensibility Service, see [Extending SAP S/4HANA Cloud in the Kyma Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/ceb333b5f3c445268705c2a7f2f034d1.html).
 
-**Parent topic:** [Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
+**Parent topic:**[Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
 
 **Related Information**  
 

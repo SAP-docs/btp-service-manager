@@ -10,7 +10,7 @@
 
 
 
-***smctl list-plans*** 
+`smctl list-plans` 
 
 Lists all service plans that are associated with the SAP Service Manager for this subaccount.
 
@@ -35,14 +35,10 @@ Lists all service plans that are associated with the SAP Service Manager for thi
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -51,21 +47,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `list-plans` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -74,21 +64,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -97,21 +81,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -120,21 +98,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -143,21 +115,15 @@ Yes
 
 `-e`, `--environment`
 
-
-
 </td>
 <td valign="top">
 
 Shows plans by specified environments. Valid values: Cloud Foundry, Kubernetes.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -166,21 +132,15 @@ No
 
 `-f`, `--field--query`
 
-
-
 </td>
 <td valign="top">
 
 Filters plans by field query.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -189,21 +149,15 @@ Filters plans by field query.
 
 `-l`, `--label-query`
 
-
-
 </td>
 <td valign="top">
 
 Filters fields by label query.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

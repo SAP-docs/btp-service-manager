@@ -10,7 +10,7 @@
 
 
 
-***smctl help*** 
+`smctl help` 
 
 Displays the whole list of available commands. When a specific command is provided, help information for the specified command is displayed.
 
@@ -43,14 +43,10 @@ Displays the whole list of available commands. When a specific command is provid
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -59,21 +55,15 @@ Global Flag
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -82,21 +72,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

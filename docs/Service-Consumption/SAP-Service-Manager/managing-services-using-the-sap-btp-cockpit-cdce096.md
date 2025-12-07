@@ -2,9 +2,21 @@
 
 # Managing Services Using the SAP BTP Cockpit
 
-Use the SAP BTP cockpit to view and manage all the services your subaccount is entitled to consume.
+Use the SAP BTP cockpit to view and manage all services your subaccount is entitled to consume.
 
 
+
+You can access and manage these services through two cockpit pages:
+
+-   *Service Marketplace*, which provides an overview of all services available for consumption in your subaccount
+
+-   *Instances and Subscriptions*, which displays lists of created service and environment instances, as well as subscriptions
+
+
+.
+
+> ### Note:  
+> You have full CRUD \(Create, Read, Update, Delete\) capabilities for service instances associated in *Other Environments*. However, for Cloud Foundry and Kyma/Kubernetes environments, you can only view existing instances.
 
 -   **[Accessibility Features in SAP Service Manager](accessibility-features-in-sap-service-manager-223a4ff.md "Optimize your experience when using SAP Service
                                 Manager in SAP BTP cockpit with features and settings that make the software work more

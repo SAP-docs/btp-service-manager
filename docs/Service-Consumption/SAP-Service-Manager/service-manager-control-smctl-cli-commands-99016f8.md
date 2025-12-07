@@ -4,6 +4,13 @@
 
 See the list of all SMCTL commands available for the Service Manager resources.
 
+> ### Caution:  
+> The Service Manager Control \(SMCTL\) command-line tool is no longer actively maintained. Only **critical security fixes** will be provided.
+> 
+> SMCTL will be **archived on September 30, 2025**. After this date, it will no longer be maintained or supported.
+> 
+> We recommend familiarizing yourself with [SAP BTP Command Line Interface \(btp CLI\)](https://help.sap.com/docs/service-manager/sap-service-manager/working-with-sap-service-manager-resources-by-using-sap-btp-command-line-interface-btp-cli-feature-set-b?version=Cloud), the closest replacement, or transitioning to other supported SAP Service Manager tools, such as [Service Manager REST APIs](https://api.sap.com/api/APIServiceManager/resource/), as soon as possible to ensure continued functionality and support.
+
 You can get help about each command directly in the SMCTL, by using the `--help` flag.
 
 > ### Example:  
@@ -63,6 +70,8 @@ The following commands are available:
 
     -   [deprovision](deprovision-f48502c.md)
 
+    -   [share-instance](share-instance-2f4c42b.md)
+    -    <?sap-ot O2O class="- topic/xref " href="8fe2befc7fd549ebbdfc3d6b34cfc05e.xml" text="" desc="" xtrc="xref:22" xtrf="file:/home/builder/src/dita-all/bmb1698152178692/loiofe9c1a8a56a7429f96692cdcd657816c_en-US/src/content/localization/en-us/99016f83ce8e4d049316b61b5cadf1fc.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 -   Service Offerings
 

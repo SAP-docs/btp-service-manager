@@ -10,7 +10,7 @@
 
 
 
-***smctl delete-platform*** 
+`smctl delete-platform` 
 
 Deletes one or more platforms registered in the SAP Service Manager instance.
 
@@ -43,14 +43,10 @@ Deletes one or more platforms registered in the SAP Service Manager instance.
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -59,21 +55,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `delete-platform` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -82,21 +72,15 @@ No
 
 `--cascade-delete`
 
-
-
 </td>
 <td valign="top">
 
 Deletes all the platforms associated with the subaccount in a single command execution.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -105,21 +89,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -128,21 +106,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

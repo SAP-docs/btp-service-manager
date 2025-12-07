@@ -8,6 +8,8 @@
 
 -   **[list-instances](list-instances-728f1b6.md "")**  
 
+-   **[share-instance](share-instance-2f4c42b.md "")**  
+
 -   **[deprovision](deprovision-f48502c.md "")**  
 
 

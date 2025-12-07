@@ -25,7 +25,7 @@
 
 -   Helm \(a package manager for Kubernetes\) v3.1.2, see [Helm Installation Instructions](https://helm.sh/docs/intro/install/).
 
--   You have subscribed to the SAP Service Manager, see [Subscribing to SAP Service Manager \[Feature Set A\]](../SAP-Service-Manager/subscribing-to-sap-service-manager-feature-set-a-274d049.md).
+-   You have subscribed to the SAP Service Manager, see  <?sap-ot O2O class="- topic/xref " href="274d049e2eac4337a1086f524295dcd6.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/bmb1698152178692/loiofe9c1a8a56a7429f96692cdcd657816c_en-US/src/content/localization/en-us/dd5faaa2c3f14cbf9d32a9886624845b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 -   You have assigned the *Subaccount Service Administrator* *role collection*, see [Assign the Subaccount Service Administrator Collection](../SAP-Service-Manager/assign-the-subaccount-service-administrator-collection-0735965.md).
 

@@ -8,7 +8,7 @@ SAP BTP services in the Neo environment don't implement the Open Service Broker 
 
 For more information, see [Using Services in the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/a32d3d532e2d4dceaaca4ebab68df037.html#loioa32d3d532e2d4dceaaca4ebab68df037).
 
-**Parent topic:** [Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
+**Parent topic:**[Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
 
 **Related Information**  
 

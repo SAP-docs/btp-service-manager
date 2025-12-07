@@ -6,7 +6,7 @@ SAP BTP, Cloud Foundry environment is an open Platform-as-a-Service \(PaaS\) tar
 
 To learn more about using services in the SAP BTP, Cloud Foundry environment, such as how to create \(user-provided\) service instances, bind them to applications, and how to create service keys, see [Using Services in the Cloud Foundry Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/f22029f0e7404448ab65f71ff5b0804d.html).
 
-**Parent topic:** [Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
+**Parent topic:**[Consuming SAP BTP Services from Various Environments](consuming-sap-btp-services-from-various-aa2ba14.md "Learn more about how to consume SAP BTP services from various runtime environments.")
 
 **Related Information**  
 

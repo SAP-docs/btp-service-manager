@@ -10,7 +10,7 @@
 
 
 
-***smctl logout*** 
+`smctl logout` 
 
 Logs the user out and deletes the active client access token.
 
@@ -43,14 +43,10 @@ Logs the user out and deletes the active client access token.
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -59,21 +55,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for the `logout` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -82,21 +72,15 @@ No
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use the verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -105,21 +89,15 @@ Yes
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Use this parameter to specify which configuration file to remove during the logout. If no path is provided, a default path `$HOME/.sm/config.json` is used.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

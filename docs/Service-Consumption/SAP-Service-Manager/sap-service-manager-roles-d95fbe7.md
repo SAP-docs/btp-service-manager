@@ -13,21 +13,15 @@ Describes the SAP Service Manager roles.
 
 Roles
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Scopes
-
-
 
 </th>
 </tr>
@@ -36,14 +30,10 @@ Scopes
 
 Subaccount Service Administrator
 
-
-
 </td>
 <td valign="top">
 
 Allows to manage resources in the subaccount in which the *service-manager* instance of this plan was created. This includes managing subaccount scoped brokers, platforms, instances and bindings and also reading services, plans and visibilities.
-
-
 
 </td>
 <td valign="top">
@@ -68,14 +58,10 @@ Allows to manage resources in the subaccount in which the *service-manager* inst
 
 Subaccount Service Viewer \[Feature Set B\]
 
-
-
 </td>
 <td valign="top">
 
 Allows read-only access to the resources in the subaccount in which the*service-manager* instance was created. This includes reading subaccount scoped brokers, platforms, instances and bindings, services, plans, and visibilities.
-
-
 
 </td>
 <td valign="top">

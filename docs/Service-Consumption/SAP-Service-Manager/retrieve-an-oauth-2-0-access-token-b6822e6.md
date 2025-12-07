@@ -6,7 +6,7 @@
 
 1.  Get an access token:
 
-    Use the `url`, `clientid`, and `clientsecret` you obtained when you created a service instance \([Create a SAP Service Manager Instance and Binding](create-a-sap-service-manager-instance-and-binding-1ca5bbe.md)\) with one of the broker plans \([SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md)\) to request an access token using the following command:
+    Use the `url`, `clientid`, and `clientsecret` you obtained when you created a service instance \([Create an SAP Service Manager Instance and Binding](create-an-sap-service-manager-instance-and-binding-1ca5bbe.md)\) with one of the broker plans \([SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md)\) to request an access token using the following command:
 
     ```
     curl '<url>/oauth/token' -X POST \

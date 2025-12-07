@@ -24,7 +24,7 @@ Update the name, plan, and configuration parameters of your service instance dir
 2.  In the *Runtime Environments* column of the *Service Instances* table, find Cloud Foundry or Other Environments, and select the instance you want to update.
 
     > ### Note:  
-    > You update an instance by selecting the Actions \(<span class="SAP-icons"></span> \) menu, and then *Update Instance*.
+    > You update an instance by selecting the Actions \(<span class="SAP-icons-V5"></span> \) menu, and then *Update Instance*.
     > 
     > You can find the Actions menu either at the end of each instance row of the *Service Instances* tables, or in the top-right section of the service instance details area that opens to the right if you click on an instance row.
 

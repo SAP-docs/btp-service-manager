@@ -10,7 +10,7 @@
 
 
 
-***smctl update-platform*** 
+`smctl update-platform` 
 
 Updates a platform with the SAP Service Manager instance.
 
@@ -53,14 +53,10 @@ smctl update-platform platform '{"name": "new-name", "description": "new-descrip
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -69,21 +65,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `update-platform` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -92,21 +82,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -115,21 +99,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -137,8 +115,6 @@ Yes
 <td valign="top">
 
 `--regenerate-credentials`
-
-
 
 </td>
 <td valign="top">
@@ -155,8 +131,6 @@ Whether to regenerate credentials for credentials rotation.
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -164,21 +138,15 @@ Whether to regenerate credentials for credentials rotation.
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>

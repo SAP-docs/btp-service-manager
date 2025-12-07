@@ -10,7 +10,7 @@
 
 
 
-***smctl unbind*** 
+`smctl unbind` 
 
 Deletes a service binding with the name provided for a specified service instance.
 
@@ -35,14 +35,10 @@ Deletes a service binding with the name provided for a specified service instanc
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -51,21 +47,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `unbind` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -74,21 +64,15 @@ No
 
 `-f`, `--force`
 
-
-
 </td>
 <td valign="top">
 
 Force delete - without confirmation.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -97,21 +81,15 @@ No
 
 `-id`
 
-
-
 </td>
 <td valign="top">
 
 ID of the service binding. Required when the service binding name is ambiguous.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -120,21 +98,15 @@ No
 
 `--mode`
 
-
-
 </td>
 <td valign="top">
 
-How calls to SAP Service Manager are performed. Possible values: ***sync*** or ***async*** \(the default is ***async***\).
-
-
+How calls to SAP Service Manager are performed. Possible values: `sync` or `async` \(the default is `async`\).
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -143,21 +115,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -166,21 +132,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -189,21 +149,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -215,7 +169,7 @@ Yes
 
 ## Example
 
-***async*** execution:
+`async` execution:
 
 ```
 > smctl unbind sample-instance sample-binding
@@ -234,7 +188,7 @@ Checking the status of the call:
 | State  | succeeded                             |
 ```
 
-***sync*** execution:
+`sync` execution:
 
 ```
 > smctl unbind sample-instance sample-binding --mode sync

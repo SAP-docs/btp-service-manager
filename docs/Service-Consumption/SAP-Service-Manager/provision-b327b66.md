@@ -10,7 +10,7 @@
 
 
 
-***smctl provision*** 
+`smctl provision` 
 
 Create a service instance in SAP Service Manager.
 
@@ -35,14 +35,10 @@ Create a service instance in SAP Service Manager.
 
 Optional
 
-
-
 </th>
 <th valign="top">
 
 Global Flag
-
-
 
 </th>
 </tr>
@@ -51,21 +47,15 @@ Global Flag
 
 `-h`, `--help`
 
-
-
 </td>
 <td valign="top">
 
 Help for `provision` command.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -74,21 +64,15 @@ No
 
 `-b``--broker-name`
 
-
-
 </td>
 <td valign="top">
 
 Name of the broker that provides the service offering. Only required when the offering name is ambiguous.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -97,21 +81,15 @@ No
 
 `--mode`
 
-
-
 </td>
 <td valign="top">
 
-How calls to SAP Service Manager are performed. Possible values: ***sync*** or ***async*** \(the default is ***async***\).
-
-
+How calls to SAP Service Manager are performed. Possible values: `sync` or `async` \(the default is `async`\).
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -120,21 +98,15 @@ No
 
 `-c``--parameters`
 
-
-
 </td>
 <td valign="top">
 
 A valid JSON object containing the instance parameters.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -143,21 +115,15 @@ No
 
 `-o`, `--output`
 
-
-
 </td>
 <td valign="top">
 
 Output format of the command. Possible options: json, yaml, text
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -166,21 +132,15 @@ No
 
 `--config`
 
-
-
 </td>
 <td valign="top">
 
 Set the path for the **smctl** `config.json` file \(default is `$HOME/.sm/config.json`\).
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -189,21 +149,15 @@ Yes
 
 `-v`, `--verbose`
 
-
-
 </td>
 <td valign="top">
 
 Use verbose mode.
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -215,7 +169,7 @@ Yes
 
 ## Example
 
-***async*** execution:
+`async` execution:
 
 ```
 > smctl provision sample-instance overview-service simple
@@ -231,7 +185,7 @@ smctl status /v1/service_instances/a6b0dfe6-1bd1-453f-a646-babd425b6b05/operatio
 				| State  | succeeded                             |
 ```
 
-***sync*** execution:
+`sync` execution:
 
 ```
 > smctl provision sample-instance overview-service simple --mode sync
