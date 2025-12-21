@@ -12,6 +12,4 @@ Learn more at [Create an SAP Service Manager Instance and Binding](create-an-sap
                                 Manager APIs. The APIs are protected with OAuth 2.0 client
 		credentials.")**  
 Learn how to create an OAuth client and obtain access credentials to call the SAP Service Manager APIs. The APIs are protected with OAuth 2.0 client credentials.
--   **[Retrieve an OAuth 2.0 Access Token](retrieve-an-oauth-2-0-access-token-b6822e6.md)**  
-
 

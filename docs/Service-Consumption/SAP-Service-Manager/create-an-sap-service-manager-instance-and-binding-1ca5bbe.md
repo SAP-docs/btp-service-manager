@@ -24,8 +24,6 @@ This guide provides detailed procedures for both general environments \(using bt
 
 Use the SAP BTP command-line interface \(btp CLI\) to create service instances and bindings for any environment.
 
-The btp CLI calls the BTP control plane, which then calls Service Manager's OSB API.
-
 1.  **Create an****SAP Service Manager ****service instance:**
 
     ```
@@ -34,7 +32,7 @@ The btp CLI calls the BTP control plane, which then calls Service Manager's OSB 
 
     Variables:
 
-    -   *<PLAN\>* - The service plan \(for example, `container`, `subaccount-admin`\). See [SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md)
+    -   *<PLAN\>* - The service plan \(for example, container, subaccount-admin\). See [SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md)
     -   *<INSTANCE\_NAME\>* - A unique name for your service instance
 
     -   *<SUBACCOUNT\_ID\>* - Your subaccount ID
@@ -49,8 +47,6 @@ The btp CLI calls the BTP control plane, which then calls Service Manager's OSB 
     **Option A: Default Credentials \(Client ID and Secret\)**
 
     This is the standard authentication method using a client ID and secret.
-
-    The OAuth token issued with these credentials contains scopes that are derived from the selected Service Manager service plan. Different service plans grant different sets of scopes, which in turn determine which API operations are allowed. All API requests are authorized at runtime based on the scopes contained in the access token. For an overview of which plans grant which scopes, see [SAP Service Manager Broker Plans](sap-service-manager-broker-plans-917a8a7.md),
 
     ```
     btp create services/binding --name <BINDING_NAME> --instance-name <INSTANCE_NAME> --subaccount <SUBACCOUNT_ID>
@@ -73,9 +69,6 @@ The btp CLI calls the BTP control plane, which then calls Service Manager's OSB 
       "xsappname": "<xsapp_name>"
     }
     ```
-
-    > ### Note:  
-    > OAuth tokens are tenant-scoped and a token issued for one subaccount cannot be used in another. The `sm_url` value is region-specific. SAP Service Manager is deployed separately per region, and access tokens and API requests are valid only for the region in which the service instance was created.
 
     **Option B: X.509 Certificate-Based Credentials**
 
@@ -402,54 +395,6 @@ This command displays all `service-manager` service plans available to your org.
     > ### Remember:  
     > Save these credentials securely. You'll need them to authenticate API calls.
 
-    > ### Note:  
-    > Successful authentication does not override API consumption limits. Even properly authenticated and authorized requests remain subject to rate-limiting rules.
-
-
-
-
-### Manually Retrieve an OAuth 2.0 Access Token \(Optional\)
-
-If you need to call the SAP Service Manager APIs outside of SAP BTP tooling, applications, or the SAP Business Accelerator Hub, for example, from scripts, external systems, or API testing tools, you can manually request an OAuth 2.0 access token using the client credentials you retrieved from the service binding or service key.
-
-Use the `url`, `clientid`, and `clientsecret` values to request an access token:
-
-```
-curl '<url>/oauth/token' -X POST \
-  -H 'Accept: application/json' \
-  -d 'grant_type=client_credentials&client_id=<clientid>&client_secret=<clientsecret>'
-
-```
-
-Response example:
-
-```
-{
-  "access_token": "<access_token>",
-  "token_type": "bearer",
-  "expires_in": 43199,
-  "scope": "<xsappname>.job.read <xsappname>.event.read"
-}
-
-```
-
-> ### Note:  
-> The access token is valid only for the duration specified in the `expires_in` field. When the token expires, applications must request a new access token using the same client credentials. The OAuth 2.0 client-credentials flow does not provide a refresh token. Long-running applications and automation scripts must therefore implement automatic token renewal.
-
-Add the access token to all API requests using the following HTTP header:
-
-```
-Authorization: Bearer <access_token>
-
-```
-
-> ### Note:  
-> The access token contains the scopes granted for this client. Only APIs that require one of these scopes can be called with this token.
-> 
-> For more information, see [Enable API Access to an XSUAA Configuration](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/ebc9113a520e495ea5fb759b9a7929f2.html).
-
-> ### Note:  
-> Even with a valid and authorized access token, API requests can be rejected due to enforced rate limits. If the allowed request quota is exceeded, the Service Manager API returns `HTTP 429` \(Too Many Requests\). For details, see [Rate Limiting](https://help.sap.com/docs/service-manager/sap-service-manager/rate-limiting?version=Cloud).
 
 
 

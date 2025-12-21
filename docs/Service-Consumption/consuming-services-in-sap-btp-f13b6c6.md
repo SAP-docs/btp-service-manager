@@ -6,8 +6,6 @@ SAP BTP provides a wide range of managed services, such as databases, messaging 
 
 
 
-
-
 ## Overview
 
 To consume a service in SAP BTP, you first create a service instance and then obtain credentials that allow your application to access that instance securely. Service instances can be created through the SAP BTP cockpit or using the command-line tools of your chosen environment \(for example, the SAP BTP Command Line Interface\).

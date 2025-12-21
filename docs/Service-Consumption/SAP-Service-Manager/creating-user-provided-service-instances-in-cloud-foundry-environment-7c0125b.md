@@ -20,9 +20,9 @@ Once created, user-provided service instances behave like service instances crea
 
 3.  Select the space in which you want to create a user-provided service instance.
 
-4.  In the navigation area, choose *Services* \> *Service Instances*.
+4.  In the navigation area, choose *Services* \> *Instances*.
 
-5.  Click on *Create* in the top-right corner, then from the dropdown list choose *Create User-Provided Service Instance* and follow the instructions in the wizard that opens.
+5.  Click on *Create* in the top-right corner, then from the dropdown list choose *User-Provided Service Instance* and follow the instructions in the wizard that opens.
 
 
 For more information about the user-provided service instances, see [User-Provided Service Instances](https://docs.cloudfoundry.org/devguide/services/user-provided.html#:~:text=provided%20service%20instances.-,Overview,to%20a%20syslog%20compatible%20consumer.).
