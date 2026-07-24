@@ -68,6 +68,7 @@
                     -   [Technical Access](Service-Consumption/SAP-Service-Manager/technical-access-666dfdc.md)
                         -   [Create an SAP Service Manager Instance and Binding](Service-Consumption/SAP-Service-Manager/create-an-sap-service-manager-instance-and-binding-1ca5bbe.md)
                             -   [SAP Service Manager Broker Plans](Service-Consumption/SAP-Service-Manager/sap-service-manager-broker-plans-917a8a7.md)
+                        -   [Retrieve an OAuth 2.0 Access Token](Service-Consumption/SAP-Service-Manager/retrieve-an-oauth-2-0-access-token-b6822e6.md)
                 -   [Rate Limiting](Service-Consumption/SAP-Service-Manager/rate-limiting-97be679.md)
                 -   [Filtering Parameters and Operators](Service-Consumption/SAP-Service-Manager/filtering-parameters-and-operators-3331c6e.md)
             -   [Using the SAP BTP Command Line Interface \(btp CLI\)](Service-Consumption/SAP-Service-Manager/using-the-sap-btp-command-line-interface-btp-cli-4dceb6a.md)
