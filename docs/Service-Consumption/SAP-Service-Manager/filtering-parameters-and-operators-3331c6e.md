@@ -107,14 +107,78 @@ The SAP Service Manager APIs support the following types of literals:
 
 ## Filter Syntax and Rules
 
--   String literals must be enclosed in single quotes \(`''`\). Single quotes in strings must be encoded with another single quote \('`''`'\).
+-   String literals must be enclosed in single quotes \(`'`\). SAP Service Manager reads a single quote as the start or the end of the string. If the text itself contains a single quote, replace it with two single quotes \(`''`\). Two single quotes in a row tell SAP Service Manager that the quote is part of the text.
 
     For example:
 
     `type ne 'cloud foundry'`
 
-    `description eq ''customized' kubernetes'`
+    To search for a text that contains a single quote, build the string like this:
 
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Step
+    
+    </th>
+    <th valign="top">
+
+    Result
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Text to search for
+    
+    </td>
+    <td valign="top">
+    
+    `Finance department's cluster`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Replace the single quote inside the text with two single quotes
+    
+    </td>
+    <td valign="top">
+    
+    `Finance department''s cluster`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Enclose the text in single quotes
+    
+    </td>
+    <td valign="top">
+    
+    `'Finance department''s cluster'`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Complete query
+    
+    </td>
+    <td valign="top">
+    
+    `description eq 'Finance department''s cluster'`
+    
+    </td>
+    </tr>
+    </table>
+    
 -   Boolean literals can't be enclosed in quotes.
 
 -   Literals can't be enclosed in brackets.
@@ -359,6 +423,8 @@ Evaluates to true if the field value is less than, or equal to the literal. Fals
 
 ### Field Query
 
+In a field query, you can filter a resource only by its own fields. To filter by a related resource, get its ID first, in this order: service broker, service offering, service plan, service instance, service binding.
+
 -   List all service instances with a service plan ID that equals `bvsded31-c303-123a-aab9-8crar19e1218`.
 
     ```
@@ -367,14 +433,40 @@ Evaluates to true if the field value is less than, or equal to the literal. Fals
 
 -   List all bindings that use the `small` or `medium` plan of the `mysql` service provided by the broker with the ID `f85bcbd3-6c8b-43f0-a019-7f0a1ec5dba4`.
 
-    ```
-    broker_id eq 'f85bcbd3-6c8b-43f0-a019-7f0a1ec5dba4' and service_name eq 'mysql' and plan_name in ('small', 'medium')
-    ```
+    A binding has no broker, service, or plan fields, so run four queries in sequence. In each step, use all IDs returned by the previous step.
 
--   List all service instances that aren’t of the `postgresql` service, that are managed by the SAP Service Manager, and that aren’t orphans.
+    > ### Note:  
+    > If a response contains a token, the list continues on another page. Repeat the same request with the `token` parameter until the response contains no token, and collect the IDs from all pages. If a step returns no items, stop. There are no matching bindings.
+
+    1.  Get the `mysql` service offerings of the broker \(`GET /v1/service_offerings`\).
+
+        ```
+        broker_id eq 'f85bcbd3-6c8b-43f0-a019-7f0a1ec5dba4' and name eq 'mysql'
+        ```
+
+    2.  Get the `small` and `medium` plans of these offerings \(`GET /v1/service_plans`\).
+
+        ```
+        service_offering_id in ('<offering ID 1>', '<offering ID 2>') and name in ('small', 'medium')
+        ```
+
+    3.  Get the service instances of these plans \(`GET /v1/service_instances`\).
+
+        ```
+        service_plan_id in ('<plan ID 1>', '<plan ID 2>')
+        ```
+
+    4.  Get the bindings of these service instances \(`GET /v1/service_bindings`\).
+
+        ```
+        service_instance_id in ('<instance ID 1>', '<instance ID 2>')
+        ```
+
+
+-   List all usable service instances that are managed by SAP Service Manager.
 
     ```
-    platform_id eq 'service-manager' and service_name ne 'postgresql' and orphan ne true
+    platform_id eq 'service-manager' and usable eq true
     ```
 
 
